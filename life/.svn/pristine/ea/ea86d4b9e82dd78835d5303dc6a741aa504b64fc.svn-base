@@ -1,0 +1,78 @@
+<div class="row">
+	
+	<h2><span id="geneName" class="summaryHeader"></span></h2>
+	<br></br>
+	
+	<div id="geneSummaryText" class="summaryText span12 paddind-top-xxl">
+		<table id="geneSummaryTable" class = "summaryTable">
+			<tr>
+				<td><strong>Entrez ID :</strong> <span id="entrezId">value</span></td>
+			</tr>
+			<tr>
+				<td><strong>Organism :</strong> <span id="organism">value</span></td>
+			</tr>
+		</table>
+	</div>
+	
+	<div id="geneSummaryLink" class="summaryLink span4">L1000 transcriptional profiling assay</div>
+	<br></br>
+	
+	<div id="waitImg" class="span12"></div>
+	
+	<div id="geneCrossFilterChart" class = "crossFilterChart row-fluid">
+			<div class = "span3">
+				<div id='geneConcentrationPieChart'>
+					<b>Concentration</b>(&mu;M)
+					<a class="reset" href="javascript:geneConcentrationPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span3">
+				<div id='geneTimePointPieChart'>
+					<b>TimePoint</b>(hrs)
+					<a class="reset" href="javascript:geneTimePointPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span3">
+				<div id='geneActivityPieChart'>
+					<b>Activity</b>
+					<a class="reset" href="javascript:geneActivityPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span3">
+				<div id='geneCellLinePieChart'>
+					<b>Cells</b>
+					<a class="reset" href="javascript:geneCellLinePieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			    </div>
+			</div>
+			
+			<div class = "span5">
+				<div id='genePerturbationMeasureBarChart'>
+					<b>Perturbation Measure</b>
+					<a class="reset" href="javascript:genePerturbationMeasureBarChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			    </div>
+		    </div>
+		    
+		    <div  id = "geneDataTableSection" class='span6 table-graph'>
+				<table class='table table-hover dc-data-table' id='geneDataTable'>
+					<thead>
+						<tr class='header'>
+							<th id="summaryPerturbagenThId">Perturbagen</th>
+							<th id="summaryGeneThId">Gene Name</th>
+							<th>Cell</th>
+							<th>Time Point (hrs)</th>
+							<th>Concentration (&mu;M)</th>
+							<th>Endpoint</th>
+							<th>Value</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+	</div>
+	
+	<div id ="downloadSummary">
+		<a class = "btn btn-small" onclick="downloadCFData();">Download</a>
+	</div>
+</div>

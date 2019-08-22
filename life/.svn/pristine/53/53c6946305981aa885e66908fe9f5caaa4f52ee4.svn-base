@@ -1,0 +1,103 @@
+[
+    {
+        "perturbations": [
+            [
+                "pKd",
+                11000,
+                100
+            ],
+            [
+                "Percent Kinase Inhibition",
+                44200,
+                200
+            ]
+        ],
+        "total": 55200,
+        "name": "KinomeScan Assay"
+    },
+    {
+        "perturbations": [
+            [
+                "Percent Kinase Inhibition",
+                550,
+                200
+            ],
+            [
+                "IC50",
+                1150,
+                300
+            ]
+        ],
+        "total": 1700,
+        "name": "Kinative Assay"
+    },
+    {
+        "perturbations": [
+            [
+                "Percent cell viability",
+                73000,
+                400
+            ]
+        ],
+        "total": 73000,
+        "name": "Cell Viability Assay"
+    },
+    {
+        "perturbations": [
+            [
+                "Percent apoptosis",
+                32000,
+                500
+            ],
+            [
+                "Percent cytotoxicty",
+                32000,
+                600
+            ]
+        ],
+        "total": 64000,
+        "name": "Apoptosis assay"
+    },
+    {
+        "perturbations": [
+            [
+                "Cell cycle: percent interphase",
+                20080,
+                700
+            ],
+            [
+                "Cell cycle: percent mitosis",
+                20070,
+                800
+            ],
+            [
+                "Cell cycle: percent S phase",
+                20070,
+                900
+            ],
+            [
+                "Cell cycle: percent G2-M arrested",
+                20070,
+                1000
+            ],
+            [
+                "Cell cycle: percent non-arrested",
+                20070,
+                1100
+            ]
+        ],
+        "total": 100350,
+        "name": "Cell cycle state assay"
+    },
+    {
+        "perturbations": [
+            [
+                "Gene Expression",
+                132809800,
+                1200
+            ]
+        ],
+        "total": 132809800,
+        "name": "L1000 Transcriptional Sesponse Assay"
+    }
+]

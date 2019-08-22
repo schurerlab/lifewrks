@@ -1,0 +1,196 @@
+<div id="viewDataCrossFilterChart" class = "crossFilterChart row-fluid">
+		<div class = "span4">
+			<div id='viewDataConPieChart'>
+				<b style="margin-left:115px;">Concentration</b>(&mu;M)
+				<a class="reset" href="javascript:viewDataConPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			</div>
+		</div>
+		
+		<div class = "span4">
+			<div id='viewDataTpPieChart'>
+				<b style="margin-left:115px;">TimePoint</b>(hrs)
+				<a class="reset" href="javascript:viewDataTpPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			</div>
+		</div>
+		
+		<div class = "span4">
+			<div id='viewDataActivityPieChart'>
+				<b style="margin-left:115px;">Activity</b>
+				<a class="reset" href="javascript:viewDataActivityPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			</div>
+		</div>
+		
+		<div class = "span4">
+			<div id='viewDataCellPieChart'>
+				<b style="margin-left:115px;">Cells</b>
+				<a class="reset" href="javascript:viewDataCellPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+		    </div>
+		</div>
+		
+		<div class = "span5">
+			<div id='viewDataPerMeasureBarChart'>
+				<b style="margin-left:115px;">Perturbation Measure</b>
+				<a class="reset" href="javascript:viewDataPerMeasureBarChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+		    </div>
+	    </div>
+	    
+	    <div  id = "viewDataCFTableSection" class='span8 table-graph'>
+			<table class='table table-hover dc-data-table' id='viewDataCFTable'>
+				<thead>
+					<tr class='header'>
+						<th>SmallMolecule</th>
+						<th>Cell</th>
+						<th>Time Point (hrs)</th>
+						<th>Concentration (&mu;M)</th>
+						<th>Endpoint</th>
+						<th>Value</th>
+						<th id="geneThId">Gene Name</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+</div>
+<div id="viewDataP100CrossFilterChart" class = "crossFilterChart row-fluid">
+		<div class = "span4">
+			<div id='viewDataPPConPieChart'>
+				<b style="margin-left:115px;">Concentration</b>(&mu;M)
+				<a class="reset" href="javascript:viewDataPPConPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			</div>
+		</div>
+		
+		<div class = "span4">
+			<div id='viewDataPPTpPieChart'>
+				<b style="margin-left:115px;">TimePoint</b>(hrs)
+				<a class="reset" href="javascript:viewDataPPTpPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			</div>
+		</div>
+		
+		<div class = "span4">
+			<div id='viewDataPPCellPieChart'>
+				<b style="margin-left:115px;">Cells</b>
+				<a class="reset" href="javascript:viewDataPPCellPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			</div>
+		</div>
+		
+		
+		<div class = "span6">
+			<div id='viewDataPPSmallMoleculeRowChart'>
+				<b style="margin-left:115px;">Perturbagen</b>
+				<a class="reset" href="javascript:viewDataPPSmallMoleculeRowChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+		    </div>
+	    </div>
+	    
+	    <div class = "span4">
+			<div id='viewDataPPPerMeasureBarChart'>
+				<b style="margin-left:115px;">Perturbation Measure</b>
+				<a class="reset" href="javascript:viewDataPPPerMeasureBarChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+		    </div>
+		</div>
+	    
+	    <div  id = "viewPPDataCFTableSection" class='span8 table-graph'>
+			<table class='table table-hover dc-data-table' id='viewPPDataCFTable'>
+				<thead>
+					<tr class='header'>
+						<th>SmallMolecule</th>
+						<th>Protein</th>
+						<th>Cell</th>
+						<th>Time Point (hrs)</th>
+						<th>Concentration (&mu;M)</th>
+						<th>Endpoint</th>
+						<th>Value</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+</div>
+
+<div id="viewDataKKCrossFilterChart" class = "crossFilterChart row-fluid">
+		
+		<div class = "span3">
+			<div id='viewDataKKActivityPieChart'>
+				<b style="margin-left:120px;">Activity</b>
+				<a class="reset" href="javascript:viewDataKKActivityPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			</div>
+		</div>
+		
+		<div class = "span3">
+			<div id='viewDataKKSmallMoleculePieChart'>
+				<b style="margin-left:105px;">Perturbagen</b>
+				<a class="reset" href="javascript:viewDataKKSmallMoleculePieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			</div>
+		</div>
+		
+		<div class = "span5">
+			<div id='viewDataKKPerMeasureBarChart'>
+				<b style="margin-left:115px;">Perturbation Measure</b>
+				<a class="reset" href="javascript:viewDataKKPerMeasureBarChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+		    </div>
+	    </div>
+	    
+	    <div  id = "viewDataKKCFDataTableSection" class='span6 table-graph'>
+			<table class='table table-hover dc-data-table' id='viewDataKKCFDataTable'>
+				<thead>
+					<tr class='header'>
+						<th>SmallMolecule</th>
+						<th>Protein</th>
+						<th id="tpCellThId"></th>
+						<th>Concentration (&mu;M)</th>
+						<th>Endpoint</th>
+						<th>Value</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+</div>
+
+<div id="viewDataProteinSecretionCrossFilterChart" class = "crossFilterChart row-fluid">
+		<div class = "span3">
+			<div id='viewDataProteinSecretionConPieChart'>
+				<b style="margin-left:100px;">Concentration</b>(ul)
+				<a class="reset" href="javascript:viewDataProteinSecretionConPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			</div>
+		</div>
+		
+		<div class = "span3">
+			<div id='viewDataProteinSecretionCellPieChart'>
+				<b style="margin-left:135px;">Cells</b>
+				<a class="reset" href="javascript:viewDataProteinSecretionCellPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			</div>
+		</div>
+		
+		<div class = "span2">
+			<div id='viewDataProteinSecretionSmallMoleculePieChart'>
+				<b style="margin-left:110px;">SmallMolecule</b>
+				<a class="reset" href="javascript:viewDataProteinSecretionSmallMoleculePieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			</div>
+		</div>
+		
+		<div class = "span3">
+			<div id='viewDataProteinSecretionProteinPieChart'>
+				<b style="margin-left:230px;">Protein</b>
+				<a class="reset" href="javascript:viewDataProteinSecretionProteinPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			</div>
+		</div>
+			
+		<div class = "span6">
+			<div id='viewDataProteinSecretionPMBarChart'>
+				<b style="margin-left:115px;">Perturbation Measure</b>
+				<a class="reset" href="javascript:viewDataProteinSecretionPMBarChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+		    </div>
+	    </div>
+	    
+	    <div  id = "viewDataProteinSecretionDataTableSection" class='span6 table-graph'>
+			<table class='table table-hover dc-data-table' id='viewDataProteinSecretionDataTable'>
+				<thead>
+					<tr class='header'>
+						<th>SmallMolecule</th>
+						<th>Protein</th>
+						<th>Cells</th>
+						<th>Concentration (ul)</th>
+						<th>Endpoint</th>
+						<th>Value</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+</div>

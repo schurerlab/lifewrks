@@ -1,0 +1,701 @@
+
+body {
+	margin: 0px auto;
+	padding: 0px;
+    font-family: trebuchet ms, helvetica, lucida sans, sans-serif;
+    background: url('/life/web/images/body-bg.jpg') repeat;
+}
+
+body.splash {
+	text-align: center;	
+	
+}
+img {
+	border: 0;
+}
+#release-badge {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 0px;
+	right: 0px;
+	background: url('/life/web/images/alpha.png') no-repeat;	
+}
+#banner {
+	height: 250px;
+	width: 100%;
+	background: url('/life/web/images/menu-bg.jpg') repeat;	
+	margin-top: 60px;
+	padding-top: 20px;
+	box-shadow: 0px 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+.topmenu {
+	margin: 0px auto;
+	width: 1019px;
+	height: 35px;
+	background: url('/life/web/images/menu-bg.jpg') repeat-x;	
+	text-align: left;
+	padding: 3px 0px 0px 5px;
+	border-radius: 0 0 8px 8px;
+	box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.1);
+}
+.topmenu a.nav {
+    color: white;
+    display: inline-block;
+    margin: 2px 5px;
+    padding: 0px 6px;
+    height: 26px;
+  	line-height: 28px; 
+    font-weight: bold;
+    text-decoration: none;
+    font-family: trebuchet ms, helvetica, lucida sans, sans-serif;
+    text-transform: uppercase;
+    font-size: 13px; 
+    border-radius: 5px;
+    border: 1px transparent;
+}
+.topmenu a.nav:hover {
+	background: #ffb966;
+	color: #38424e;
+	
+}
+
+.topmenu a#video {
+	background: url('/life/web/images/video.png') no-repeat;
+	background-position: -2px 2px;
+}
+.topmenu a#help {
+	background: url('/life/web/images/help.png') no-repeat;
+	background-position: 0px 2px;
+}
+.topmenu a#home {
+	background: url('/life/web/images/home.png') no-repeat;
+	background-position: -2px 2px;
+}
+.topmenu a#settings {
+	background: url('/life/web/images/settings.png') no-repeat;
+	background-position: -2px 2px;
+}
+.topmenu .button{
+	line-height: 28px; 
+	height: 28px;
+	width: 28px;
+	display: inline-block;
+    border-radius: 5px;
+    display: inline-block;
+}
+.topmenu .button:hover {
+	background: #ffb966;
+	line-height: 28px; 
+}
+.buttonContainer {
+	float: right;
+	margin-right: 5px;
+}
+#searchForm {
+	display: inline-block;
+	position: relative;
+}
+#defaultSuggest {
+	width: 440px;
+	background: url('/life/web/images/q-bg.png') repeat-x;
+	border-radius: 5px;
+	display: inline-block;
+	height: 26px;
+	position: absolute;
+	top: -18px;
+	padding-left: 170px;
+}
+#conceptSuggest {
+	display: none;
+	width: 440px;
+	background: url('/life/web/images/concept-bg.png') repeat-x;
+	border-radius: 5px;
+	height: 26px;	
+	position: absolute;
+	top: -18px;
+	padding-left: 170px;
+}
+
+#defaultSuggest .search, #conceptSuggest .search {
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	background: url('/life/web/images/search-bg.png') no-repeat;
+	border: 0px;
+	cursor: pointer;
+}
+
+#qDefault, #qConcept {
+	width: 400px;
+	height: 25px;
+	border: 0px;
+	font-weight: bold;
+	color: #000000;
+	font-size: 14px;
+	background: transparent;
+	padding-left: 5px;
+    font-family: trebuchet ms, helvetica, lucida sans, sans-serif;
+    letter-spacing: 0.07em;
+}
+
+#toggleContainer {
+	position: absolute; 
+	z-index: 8; 
+	color: #000000; 
+	width: 200px; 
+	top: -18px; 
+	padding: 1px 5px;
+	font-size: 12px;
+}
+.suggestToggle {
+	
+	display: inline-block;
+	padding: 2px;
+	border: 1px solid transparent;
+	background: transparent;
+	font-size: 12px;
+	color: #000000;
+	
+}
+
+.splash-header {
+	margin: 30px auto;
+	padding: 10px 5px 5px 0px;
+	background: url('/life/web/images/logo-splash.png') no-repeat;
+	width: 1024px;
+	height: 300px;
+}
+
+.mission {
+	padding: 20px 0px 0px 380px;
+	font-size: 21px;
+	font-weight: bold;
+	color: #ffb966;
+	font-family: trebuchet ms, helvetica, lucida sans, sans-serif;
+	text-align: left;
+	font-style: italic;
+}
+.content
+{
+	width: 1014px;
+	min-height: 500px;
+	margin: 0px auto;
+	padding: 30px 5px 20px 5px;
+	background: #ffffff;
+	box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+	text-align: left;
+}
+
+body.splash .content {
+	margin: 0px auto;
+}
+
+.blurb {
+	width: 600px;
+	padding: 8px;
+	font-family: sans-serif;
+	font-size: 13px;
+	line-height: 24px; 
+	float: left;
+	text-align: justify;
+	font-weight: normal;
+}
+.introVideo {
+	float: right;
+	width: 380px;
+	padding-top: 10px;
+}
+.footer {
+	height: 200px;
+	width: 1014px;
+	padding: 5px;
+	margin: 0px auto 40px auto;
+	background: #ffffff;
+	box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 0 0 8px 8px;
+	clear: both;
+}
+
+.footer div {
+	float: left;
+	padding: 5px;
+}
+
+#tabHolder {
+	width: 100%;
+	height: 32px;	
+	margin-top: 20px;
+	background: url('/life/web/images/table-bg.jpg') repeat-x;	
+	border-radius: 8px 8px 0 0;
+}
+#tabs {
+	float: left;	
+	
+}
+#tabs a {
+	color: #000;
+	text-decoration: none;
+	font-variant: small-caps;
+	display: inline-block;
+	padding: 3px 5px 3px 5px;
+	margin-right: 5px;
+	height: 26px;
+	border-radius: 8px 8px 0 0;
+}
+
+#tabs a:hover {
+	background: url('/life/web/images/q-bg.png') repeat-x;	
+}
+
+#tabs a.active {
+	background: url('/life/web/images/menu-bg.jpg') repeat-x;	
+	border-radius: 8px 8px 0 0;
+	color: #ffffff;
+}
+#header {
+	height: 55px;
+	margin-top: -20px;
+}
+#logo {
+	float: left;
+	height: 55px;
+	width: 130px;
+	background: url('/life/web/images/logo.png') no-repeat;	
+}
+#message {
+	border-radius: 3px;
+	display: inline-block;
+	color: #ffffff;
+	height: 18px;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 3px 5px 2px 24px;	
+}
+.successHighlight {
+	background: #019d34 url('/life/web/images/success.png') no-repeat;
+}
+.errorHighlight {
+	background: #d50a00 url('/life/web/images/error.png') no-repeat;
+}
+#contextMenu {
+	float: right;
+	border-radius: 8px 8px 0 0;
+	height: 22px;
+	margin-top: 30px;
+}
+#contextMenu a {
+	display: inline-block;
+	height: 18px;
+	padding: 3px 3px 3px 20px;
+	background: url('/life/web/images/menu-bg.jpg') repeat-x;	
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-left: 5px;
+}
+
+#contextMenu a.add {
+		background: #10c8ff url('/life/web/images/add.png') no-repeat;	
+		background-position: 2px 3px;
+}
+#contextMenu a.manage {
+		background: #10c8ff url('/life/web/images/list.png') no-repeat;	
+		background-position: 2px 3px;
+}
+#contextMenu a.add:hover {
+		background: #ffb966 url('/life/web/images/add.png') no-repeat;	
+		background-position: 2px 3px;
+}
+#contextMenu a.manage:hover {
+		background: #ffb966 url('/life/web/images/list.png') no-repeat;
+		background-position: 2px 3px;	
+}
+#dynamic {
+	clear: both;
+}
+#heatMapWell{
+	clear:both;
+}
+#heatMapWell .hmOverview a {
+	font-family: trebuchet ms, helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+	text-decoration: none;
+}
+.hmOverview {
+	height: 20px; width: 800px; clear: both;
+}
+.hmDetails {
+	height: 5px; width: 800px; clear: both;
+}
+
+a.cell {
+	display: inline-block;
+	width: 18px;
+	height: 20px;
+	border: 1px solid transparent;
+	float: left;
+}	
+
+a.cell:hover {
+	border: 1px solid #ffffff;
+}
+#searchOpts {
+
+}
+.picker {
+	width: 450px;
+	padding: 5px;
+	margin: 5px;
+	text-align: left;
+}
+.subhead {
+	display: inline-block;
+	font-family: trebuchet  ms, helvetica, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 160px;
+	font-size: 13px;
+	margin: 6px 0px;
+}
+.ui-multiselect-header ul {
+	font-size: 12px;
+	
+}
+.ui-autocomplete {
+	height: 220px;
+	overflow-y: auto;
+	text-align: left;
+}
+.tabContent {
+	font-size: 13px;
+	font-family: trebuchet ms, helvetica, lucida sans, sans-serif;
+	color: #8d8e91;
+	line-height: 22px;
+	padding: 20px 10px;
+}
+.sectionTitle {
+	font-size: 18px;
+	font-family: trebuchet ms, helvetica, lucida sans, sans-serif;
+	text-align: left;
+	font-style: italic;
+	font-weight: bold;
+	display: block;
+	color: #49b1ec;
+}
+
+
+		/******************************************
+		 * Begin style elements block for the datatable.
+		 * These are modified elements from the default stylesheet
+		 * which incorporate specific changes made to the structure
+		 ******************************************/
+		.dataTable {
+			width: 90%;
+			border: 0px solid #999a9d;
+		}
+		.dataTable td {
+			border-bottom: 1px dashed #999a9d;
+			padding: 8px;
+			text-align: left;
+			font-size: 12px;
+			
+		}
+		.dataTable thead {
+			background: url('/life/web/images/menu-bg.jpg') repeat-x;	
+			color: #ffffff;
+			font-variant: small-caps;
+			font-size: 15px;
+		}
+		.dataTable th {
+			text-align: left;
+			padding: 8px;
+		}
+
+		/* Two button pagination - previous / next */
+		
+		.paginate_disabled_previous,
+		.paginate_enabled_previous,
+		.paginate_disabled_next,
+		.paginate_enabled_next {
+			height: 19px;
+			width: 0px;
+			cursor: pointer;
+			*cursor: hand;
+			color: #111 !important;
+			overflow: hidden;
+		}
+		.paginate_disabled_previous:hover,
+		.paginate_enabled_previous:hover,
+		.paginate_disabled_next:hover,
+		.paginate_enabled_next:hover {
+			text-decoration: none !important;
+		}
+		.paginate_disabled_previous:active,
+		.paginate_enabled_previous:active,
+		.paginate_disabled_next:active,
+		.paginate_enabled_next:active {
+			outline: none;
+		}
+		
+		.paginate_disabled_previous,
+		.paginate_disabled_next {
+			color: #666 !important;
+		}
+		.paginate_disabled_previous,
+		.paginate_enabled_previous {
+			padding-left: 19px;
+		}
+		.paginate_disabled_next,
+		.paginate_enabled_next {
+			padding-left: 19px;
+
+		}
+		/*
+		.paginate_enabled_previous { 		        
+			background: url('/life/web/images/paging-sprite.jpg') no-repeat;
+		    background-position: -40px 0px;
+		}		
+		.paginate_disabled_previous { 		        
+			background: url('/life/web/images/paging-sprite.jpg') no-repeat;
+		    background-position: 0px 0px; 
+		 }
+		
+		.paginate_enabled_next { 
+			background: url('/life/web/images/paging-sprite.jpg') no-repeat;
+			background-position: -60px 0px;
+		}
+		.paginate_disabled_next { 
+		        background: url('/life/web/images/paging-sprite.jpg') no-repeat;
+		        background-position: -20px 0px;
+		}
+		*/
+		.dataTables_filter {
+			float: right;
+			padding-right: 5px;
+			padding-top: 5px;
+		}
+		.dataTables_length {
+			float: left;
+		}
+		.top {
+			height: 30px;
+			width: 100%;
+			background: url('/life/web/images/menu-bg.jpg') repeat-x;	
+			color: #ffffff;
+			font-size: 13px;
+		}
+		/*
+		 * Table wrapper
+		 */
+		.dataTables_wrapper {
+			position: relative;
+			*zoom: 1;
+		}
+		.dataTables_wrapper .bottom {
+			height: 50px;
+		}
+		/******************************************
+		 * End style elements block for the datatable.
+		 ******************************************/
+		 
+		 /******************************************
+		 * Compare Table style : Start
+		 ******************************************/
+		 #dropDowns{
+		 	float: left;
+		 	padding-left:20px;
+		 	padding-top:10px;
+		 	width:20%
+		 }
+		 #endPoints {
+		 	padding-top:25px;
+		 }
+		 #epTime{
+		 	padding-bottom:25px; 
+		 	padding-top:25px; 
+		 	padding-right:5px; 
+		 	float: left;
+		 }
+		 #epConcentration{
+		 	padding-bottom:25px;
+		 	float: left;
+		 }
+		 
+		 #charts{
+		 	float:left;
+		 	padding-left:50px;
+		 	padding-bottom:25px;
+		 }
+		 #barChart{
+		 	float: left; 
+		 	width:450px; 
+		 	height:300px;
+		 }
+		 #prev{
+		 	float: left; 
+		 	cursor:pointer; 
+		 	padding-top:300px; 
+		 	padding-left:0px; 
+		 	padding-bottom:15px; 
+		 	font-size:12px;
+		 }
+		 #next{
+		 	float: left; 
+		 	cursor:pointer;
+		 	padding-top:300px; 
+		 	padding-left:10px; 
+		 	padding-bottom:15;
+		 	font-size:12px; 
+		 }
+		 #pieChart{
+		 	float: left; 
+		 	width:200px; 
+		 	height:200px;
+		 }
+		 
+		 table.comparetable {
+			font-family: verdana,arial,sans-serif;
+			font-size:9px;
+			color:#333333;
+			border-width: 1px;
+			border-color: #666666;
+			border-collapse: collapse;
+			clear: both;
+			margin: 0 auto;
+			table-layout:fixed; 
+			width:1000px;
+		}
+		table.comparetable th {
+			border-width: 1px;
+			border-style: solid;
+			border-color: #666666;
+			padding: 2px;
+			background: url('/life/web/images/table-bg.jpg') repeat-x;	
+			width:80px; 
+			word-wrap:break-word;
+			
+		}
+		table.comparetable td {
+			border-width: 1px;
+			padding: 6px;
+			border-style: solid;
+			border-color: #666666;
+			background-color: #ffffff;
+		}
+		
+		#contextMenu a.compare {
+			background: url('/life/web/images/menu-bg.jpg') repeat-x;
+			background-position: 2px 3px;
+		} 
+		table.dataTable tr.odd td.sorting_1, table.dataTable tr.even td.sorting_1 {
+			background: transparent;
+		}
+		 /******************************************
+		 * Compare Table style : End
+		 ******************************************/
+
+		 /*	 Summary page: Start  */
+		 #summaryWell{
+		 	font-size:13px;
+		 	float:left; 
+		 	padding-bottom:20px;
+		 	width:600px; 
+			word-wrap:break-word;
+		 }
+		 #imageStr{
+		 	padding-right:45px; 
+		 	padding-bottom:15px;
+		 	float:left; 
+		 	margin-top: 0px;
+		 }
+		 #hmType{
+		 	 clear:both;
+		 	 float:left;
+		 	 width:250px;
+		 	 padding-top :15px;
+		 	 padding-bottom :7px;
+		 	 padding-right :145px;
+		 }
+		 #summaryEpTime{
+		 	float:left;
+		 	padding-top :15px;
+		 	padding-right :5px;
+		 }
+		 #summaryEpCon{
+		 	float:left;
+		 	padding-top :15px;
+		 }
+		 #summarySubmit {
+		 	float:left;
+		 	
+		 }	
+		 .sub-summary td {
+		    padding: 0px 0px 0px 0px;
+		    width: 200px;
+		    height: 20px;
+		}
+		 /*	 Summary page: End  */
+
+#pageNum, #resultsCount {
+	font-weight: normal;
+	font-size: 13px;
+	float: left;
+}
+		/******************************************
+		 * Begin style elements block for clueTips.
+		 ******************************************/
+div.ui-cluetip {
+  font-size: 12px;
+  min-width: 450px;
+  font-weight: normal;
+  text-align: left;
+}
+.ui-cluetip-header,
+.ui-cluetip-content {
+  padding: 5px;
+}
+.ui-cluetip-header {
+  margin: 0;
+  overflow: hidden;
+}
+.cluetip-default h3#cluetip-title {
+margin: 0 0 5px;
+padding: 3px;
+font-size: 12px;
+font-weight: normal;
+background-color: #87876a;
+color: #fff;
+}
+
+.cluetip-title .cluetip-close {
+  float: right;
+  position: relative;
+}
+.cluetip-close img {
+  border: 0;
+}
+
+#cluetip-waitimage {
+  width: 43px;
+  height: 11px;
+  position: absolute;
+  background-image: url(/life/web/images/wait.gif);
+}
+.cluetip-arrows {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -11px;
+  width: 11px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border-width: 0;
+}
+.cluetip-extra {
+  display: none;
+}

@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'Strait';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Strait'), url(strait.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Monda';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Monda Regular'), local('Monda-Regular'), url(monda.woff) format('woff');
+}
+
+.resultElement {
+	padding: 0px;
+	box-shadow: 0 0 10px rgba(126, 128, 128, 0.8);
+	margin: 10px 0;
+}
+
+.resultElement:hover {
+	box-shadow: 0 0 10px rgba(255, 128, 0, 0.8);
+}
+
+a.add {
+	display: inline-block;
+	background: url('/life/web/images/add.png') no-repeat;
+	height: 32px;
+	width: 32px;
+	float: left;
+}
+
+.resultTitle {
+	font-size: 1.15em;
+	line-height: 32px;
+	font-weight: bold;
+	font-family: Monda;
+	letter-spacing: 0.1em;
+	word-break: break-all;
+}
+
+.resultCaption {
+	text-align: right;
+	padding-right: 1%;
+}
+
+input#filter,select#index {
+	width: 100%;
+}
+
+.search-container {
+	margin-bottom: 0;
+}
+
+a.extLink {
+	display: inline-block;
+	height: 1.75em;
+	width: 1.75em;
+	background-image: url('/life/web/images/uniprot.png');
+	background-position: 52% 52%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	color: #ffffff;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 0.6em;
+	margin-right: 0.2em;
+	text-decoration: none;
+}
+
+.resLinks {
+	padding-left: 0.5em;
+	border-left: 1px dashed #b9dcff;
+}
+
+.resHead {
+	border-bottom: 1px dashed #b9dcff;
+}
+
+a.extLink:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.pubchem {
+	background-image: url('/life/web/images/pubchem.png');
+}
+
+a.uniprot {
+	background-image: url('/life/web/images/uniprot.png');
+}
+
+a.lincs {
+	background-image: url('/life/web/images/lincs.png');
+}
+
+a.pdb {
+	background-image: url('/life/web/images/pdb.png');
+}
+
+a.entrez {
+	background-image: url('/life/web/images/entrez.png');
+}
+
+a.bioportal {
+	background-image: url('/life/web/images/bioportal.png');
+}
+
+.loaderContainer {
+	text-align: center;
+}
+
+body {
+	font-family: Strait;
+}

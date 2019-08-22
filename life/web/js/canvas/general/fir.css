@@ -1,0 +1,154 @@
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#121212;
+	line-height:1.6em;
+
+}
+
+.axis path,
+			.axis line {
+				fill: none;
+				stroke: black;
+				shape-rendering: auto;
+			}
+			
+			.axis text {
+				font-family: sans-serif;
+				font-size: 11px;
+			}
+			
+			div.beveled {
+		
+			text-align: center;
+			}
+			
+            div.block{
+		
+			font-weight: bold;
+			font-size: 10px;
+			display: inline-block;
+			vertical-align:top;
+		
+			}
+			
+			a.highlight{
+			font-size: 18px;
+			font-weight:bold;
+			color: Crimson;
+			}
+#LCBTitle{
+	text-align: left;
+	color:#626365;
+	padding-left: 50px;
+}
+#content{padding-bottom: 2em}
+#twoGridAdjust{ font-size: 10px; min-height: 480px; margin-top: 40px; }
+#nav{
+    font-size:1.2em;
+	text-align:left;
+	}
+
+#nav > table {
+    width: 300px;
+    border: 0;
+}
+ 
+#nav > table td {
+    border-right: 0;
+}
+
+#nav a {
+	color: #D90000;
+	outline: 0;
+	text-decoration: none;
+}
+	
+#gridDiv, #enrichrBox {
+    position: relative;
+}
+
+#correction, #svgContainer, #chartContainer, #pvalueContainer, #selectionDisplay4 {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+
+#base + div { vertical-align:top;}
+
+#cellTypeOption,#batchOption{ text-align: center;font-size:1em;padding-top:7px;
+                              margin: 0 auto;}
+
+#cellTypeOption > span, #batchOption > span {
+    width: 5em;
+    display: inline-block;
+}
+
+div#GSE{
+	height:30.1em;
+	overflow:auto;
+	
+}
+
+#GSEElement1{font-size:0.8em;}
+
+#enrichrBox{
+	font-weight: bold;
+	font-size: 1em;
+	display: inline-block;
+	vertical-align: top;
+	}
+ #enrichrBox  div div span {color:Crimson;}
+ #enrichrBox  div div div { font-size:6px; }
+ #enrichrBox  div > div { padding-bottom:1px ;}
+ 
+ 
+textarea {
+   font-family: inherit;
+   font-size: inherit;
+}
+#cellTypeSelect,#batchSelect { width: 7.2em;font-size:1em;}
+ div#enrichrBox select{font-size:1.1em; width:300px; height:2.2em; position: absolute; left: 0;}
+ div#enrichrBox select option{text-align:center;}
+ div#enrichrBox form input{font-size:10px;}
+ .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { color: brown }
+ #LJPslider a{ top:-.1em;border: 1px solid #FBCB09;width:0.9em;height:0.9em;}             
+ #LJPslider{width:20px;height:8px;}
+ #slider a{z-index:1;}
+ .ui-selectmenu-menu li a { font-size:7px}
+ 
+
+
+
+div#correction {
+	text-align: left;
+}
+
+div#infoCorrection{
+    width: 300px;
+}
+
+div#below{
+	width:300px;
+	text-align: center;
+}
+
+#choiceView {
+    padding-top: 340px;
+}
+
+#info_box {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.error {
+    color: red;
+}
+
+#enrichrBox .error {
+    position: absolute;
+    top: 30px;
+    display: none;
+}

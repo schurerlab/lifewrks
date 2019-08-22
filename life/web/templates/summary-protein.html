@@ -1,0 +1,58 @@
+<div class="row">
+	<h2><span id="summaryProteinName" class="summaryHeader"></span></h2>
+   	<h3> &nbsp;&nbsp;<span id="summaryProteinSymbol"></span></h3>
+	<br></br>
+	
+	<div id="cellSummaryText" class="summaryText span12 paddind-top-xxl">
+	    <table id="cellSummaryTable" class="summaryTable">
+	    	<tr>
+	    		<td><strong>Uniprot ID  : </strong><span id="uniprotId"></span></td>
+	    		<td><strong>LINCS Facility ID : </strong><span id="facilityId"></span></td>
+	    	</tr>
+	    	<tr>	
+	    		<td><strong>Group : </strong><span id="group"></span></td>
+	    		<td><strong>Kinase Family : </strong><span id="kinaseFamily"></span></td>
+	    		<td></td>
+	    	</tr>
+	    	<tr>
+	    		<td><strong>Gate Keeper : </strong><span id="gateKeeper"></span></td>
+	    		<td><strong>Kinase Hinge 1 : </strong><span id="kinaseHinge1"></span></td>
+	    		<td><strong>Kinase Hinge 3 : </strong><span id="kinaseHinge3"></span></td>
+	    	</tr>
+	    </table>
+	</div>    
+	
+	<hr style="clear:both;" class="line_break">
+	<div id="summaryLinks" class="span12"></div>
+	<div id="waitImg" class="span12"></div>
+	
+	<div id="heatMapSection" class="span6">
+		<div>
+			<div id="sortBy" class="span2">
+				<strong>Sort by:</strong>
+				<select id="sort_func">
+				  <option value="value" selected="selected">by Value</option>
+				  <option value="alphabetic">Alphabetic</option>
+				</select>
+			</div>
+			<div id="heatMapZoom" class="span2">
+				<strong>Zoom</strong> <input type='text' id="zoom" value="0.8">
+			</div>
+			<div id="heatMap" class="span12"></div>
+			<div class="tooltip" style="opacity: 0.01"></div>
+		</div>
+		<div id="heatMapLegend">
+	   		<div>
+				<p class="align-center text-blue"><strong>Legend</strong></p>
+				<img class="rounded" src="/life/web/images/legend.png" />
+			</div>	
+	
+			<div id="heatmap-percentage">
+				<span id="percentStartVal" class="label label-default float-left">0%</span>
+			    <span id="percentEndVal" class="label label-default float-right">100%</span>
+			</div>
+		</div>
+    </div>
+    
+	<div id="header-table-summary"></div>
+</div>	

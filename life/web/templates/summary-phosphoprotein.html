@@ -1,0 +1,83 @@
+<div class="row">
+	<h2><span id="phosphoProteinName" class="summaryHeader"></span></h2>
+	<br></br>
+	
+	<div id="ppSummaryText" class="summaryText span12 paddind-top-xxl">
+		<table id="ppSummaryTable" class = "summaryTable">
+			<tr>
+				<td><strong>Phosphosite:</strong> <span id="phosphosite">value</span></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><strong>Base Peptide:</strong> <span id="basepeptide">value</span></td>
+				<td><strong>Modified Peptide:</strong> <span id="modifiedpeptide">value</span></td>
+			</tr>
+			<tr>
+				<td><strong>Cluster:</strong> <span id="cluster">value</span></td>
+				<td><strong>Cluster Code:</strong> <span id="clustercode">value</span></td>
+			</tr>
+		</table>
+    </div>
+    
+	<div id="ppLink" class="summaryLink span3">P100 phosphoprotein profiling assay</div>
+	<br></br>
+	
+	<div id="waitImg" class="span12"></div>
+	
+	<div id="ppCrossFilterChart" class = "crossFilterChart row-fluid">
+			<div class = "span2">
+				<div id='ppConcentrationPieChart'>
+					<b>Concentration</b>(&mu;M)
+					<a class="reset" href="javascript:ppConcentrationPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span2">
+				<div id='ppTimePointPieChart'>
+					<b>TimePoint</b>(hrs)
+					<a class="reset" href="javascript:ppTimePointPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span2">
+				<div id='ppCellLinePieChart'>
+					<b>Cells</b>
+					<a class="reset" href="javascript:ppCellLinePieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span5">
+				<div id='ppSmallMoleculeRowChart'>
+					<b>SmallMolecule Name</b>
+					<a class="reset" href="javascript:ppSmallMoleculeRowChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			    </div>
+			</div>
+			
+			<div  id = "ppDataTableSection" class='span6 table-graph'>
+				<table class='table table-hover dc-data-table' id='ppDataTable'>
+					<thead>
+						<tr class='header'>
+							<th>SmallMolecule</th>
+							<th>Protein</th>
+							<th>Cell</th>
+							<th>Time Point (hrs)</th>
+							<th>Concentration (&mu;M)</th>
+							<th>Endpoint</th>
+							<th>Value</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+			
+			<div class = "span5">
+				<div id='ppPerturbationMeasureBarChart'>
+					<b>Perturbation Measure</b>
+					<a class="reset" href="javascript:ppPerturbationMeasureBarChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			    </div>
+		    </div>
+	</div>
+	
+	<div id ="downloadSummary">
+		<a class = "btn btn-small" onclick="downloadCFData();">Download</a>
+	</div>
+</div>

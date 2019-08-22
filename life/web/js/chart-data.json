@@ -1,0 +1,67 @@
+{
+    "flare": {
+        "Cell Lines": {
+            "head & neck": 30,
+            "duodenum ": 1,
+            "testes ": 1,
+            "intestine": 43,
+            "ureter ": 1,
+            "prostate ": 5,
+            "nervous system ": 14,
+            "gall bladder ": 1,
+            "cervix ": 15,
+            "muscle ": 4,
+            "breast ": 53,
+            "stomach": 24,
+            "skin ": 40,
+            "adrenal gland": 2,
+            "bone ": 18,
+            "brain": 32,
+            "ovary": 26,
+            "large intestine": 1,
+            "vulva": 2,
+            "lung ": 129,
+            "miscellaneous": 7,
+            "kidney ": 15,
+            "liver": 27,
+            "uterus ": 14,
+            "urinary bladder": 20,
+            "prostate gland ": 1,
+            "pancreas ": 32,
+            "esophagus": 18,
+            "thyroid": 15
+        },
+        "Proteins": {
+            "Other": 47,
+            "ADCK": 2,
+            "Lipid kinase": 20,
+            "CK1": 8,
+            "TKL": 33,
+            "STE": 42,
+            "CMGC": 57,
+            "Atypical": 5,
+            "TK": 147,
+            "AGC": 59,
+            "pknB": 1,
+            "CAMK": 56
+        },
+        "Compounds": {
+            "PDB ligand": 253,
+            "NPC": 565,
+            "Kinase drug": 6,
+            "MLP probe": 118,
+            "Type II kinase inhibitor": 22,
+            "Type I kinase inhibitor": 54,
+            "Promiscuous kinase inhibitor (HMS)": 21,
+            "Group selective kinase inhibitor (HMS)": 3,
+            "Kinase inhibitor (HMS)": 59
+        },
+        "Assay": {
+            "KINOMEscan": 66,
+            "Apoptosis assay": 8,
+            "Cell cycle state assay": 11,
+            "Cell growth inhibition assay": 39,
+            "L1000 transcriptional profiling assay": 2868
+        }
+    }
+}

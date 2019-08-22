@@ -1,0 +1,59 @@
+#viewDataCrossFilterChart{
+	padding-top:5%;
+}
+
+#viewDataCFTableSection {
+	border: 2px solid #a1a1a1;
+	margin-top:4%;
+	margin-left:11%;
+	overflow:auto;
+    height:500px;
+	width:800px;
+	font-size:13px;
+}
+
+#viewPPDataCFTableSection {
+	border: 2px solid #a1a1a1;
+	margin-top:2%;
+	margin-left:8%;
+	overflow:auto;
+    height:530px;
+	width:830px;
+	font-size:13px;
+}
+
+#viewDataPPPerMeasureBarChart{
+	margin-left:15%;
+}
+
+#viewDataPPSmallMoleculeRowChart {
+	margin-left:5%;
+}
+
+#viewDataKKCFDataTableSection{
+	border: 2px solid #a1a1a1;
+	margin-top:4%;
+	margin-left:8%;
+	overflow:auto;
+    height:535px;
+	width:900px;
+	font-size:13px;
+}
+
+#viewDataKKPerMeasureBarChart {
+	margin-left:8%;
+}
+
+#viewDataProteinSecretionDataTableSection{
+	border: 2px solid #a1a1a1;
+	margin-top:4%;
+	margin-left:8%;
+	overflow:auto;
+    height:535px;
+	width:900px;
+	font-size:13px;
+}
+
+#viewDataProteinSecretionPMBarChart{
+	margin-left:10%;
+}

@@ -1,0 +1,25 @@
+div#nodeInformation {
+	
+}
+
+div#infoContainer {
+	
+}
+
+div#svgContainer,div#chartContainer {
+	text-align: center;
+}
+
+svg#mainSVG {
+	vertical-align: middle;
+}
+
+#nodeName, #termName {
+	height: 20px;
+	width: 100%;
+	padding: 10px;
+}
+
+#termContainer{
+	padding-top: 10px;
+}

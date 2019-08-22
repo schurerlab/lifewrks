@@ -1,0 +1,229 @@
+<link rel="stylesheet" type="text/css" href="/life/web/js/canvas/css/hmslincs.css" />
+<link rel="stylesheet" type="text/css" href="/life/web/js/canvas/general/fir.css"/>
+
+<div class="row">
+	<h2><span id="summaryCellName" class="summaryHeader"></span></h2>
+   	<h3> &nbsp;&nbsp;<span id="summaryCellCategory"></span></h3>
+	<br></br>
+
+
+    <div id="cellSummaryText" class="summaryText span12 paddind-top-xxl">
+	    <table id="cellSummaryTable" class="summaryTable">
+	    	<tr>
+	    		<td><strong>Organ : </strong><span id="organ"></span></td>
+	    		<td><strong>Disease : </strong><span id="disease"></span></td>
+	    		
+	    	</tr>
+	    	<tr>	
+	    		<td><strong>Provider : </strong><span id="provider"></span></td>
+	    		<td><strong>Provider ID : </strong><span id="providerId"></span></td>
+	    		<td></td>
+	    	</tr>
+	    	<tr>
+	    		<td><strong>LINCS Source ID : </strong><span id="lincsSourceId"></span></td>
+	    		<td><strong>DO ID : </strong><span id="doId"></span></td>
+	    	</tr>
+	    </table>
+	</div>    
+	
+	<hr style="clear:both;" class="line_break">
+	<div id="summaryLinks" class="span12"></div>
+	<div id="waitImg" class="span12"></div>
+	
+	<!-- Crossfilter DIV for L1000/Cell cycle state/cell growth/Apoptosis assay	 -->
+	<div id="cellCrossFilterChart" class = "crossFilterChart row-fluid">
+			<div class = "span3">
+				<div id='concentrationPieChart'>
+					<b>Concentration</b>(&mu;M)
+					<a class="reset" href="javascript:concentrationPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span3">
+				<div id='timePointPieChart'>
+					<b>TimePoint</b>(hrs)
+					<a class="reset" href="javascript:timePointPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span3">
+				<div id='activityPieChart'>
+					<b>Activity</b>
+					<a class="reset" href="javascript:activityPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span3">
+				<div id='cellLinePieChart'>
+					<b>Cells</b>
+					<a class="reset" href="javascript:cellLinePieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			    </div>
+			</div>
+			
+			<div class = "span5">
+				<div id='perturbationMeasureBarChart'>
+					<b>Perturbation Measure</b>
+					<a class="reset" href="javascript:perturbationMeasureBarChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			    </div>
+		    </div>
+		    
+		    <div  id = "cfDataTableSection" class='span6 table-graph'>
+				<table class='table table-hover dc-data-table' id='cfDataTable'>
+					<thead>
+						<tr class='header'>
+							<th>SmallMolecule</th>
+							<th>Cell</th>
+							<th>Time Point (hrs)</th>
+							<th>Concentration (&mu;M)</th>
+							<th>Activity</th>
+							<th>Value</th>
+							<th id="summaryGeneThId">Gene Name</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+	</div>
+	
+	<!-- Crossfilter DIV for Phosphoprotein assay -->
+	<div id="cellPPCrossFilterChart" class = "crossFilterChart row-fluid">
+			<div class = "span3">
+				<div id='smallMoleculeConcentrationPieChart'>
+					<b>Concentration</b>(&mu;M)
+					<a class="reset" href="javascript:smallMoleculeConcentrationPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span3">
+				<div id='smallMoleculeTimePointPieChart'>
+					<b>TimePoint</b>(hrs)
+					<a class="reset" href="javascript:smallMoleculeTimePointPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span3">
+				<div id='smallMoleculeCellLinePieChart'>
+					<b>Cells</b>
+					<a class="reset" href="javascript:smallMoleculeCellLinePieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span5">
+				<div id='smallMoleculePerturbationMeasureBarChart'>
+					<b>Perturbation Measure</b>
+					<a class="reset" href="javascript:smallMoleculePerturbationMeasureBarChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			    </div>
+		    </div>
+		    
+		    <div  id = "smallMoleculeDataTableSection" class='span6 table-graph'>
+				<table class='table table-hover dc-data-table' id='smallMoleculeDataTable'>
+					<thead>
+						<tr class='header'>
+							<th>SmallMolecule</th>
+							<th>Protein</th>
+							<th>Cell</th>
+							<th>Time Point (hrs)</th>
+							<th>Concentration (&mu;M)</th>
+							<th>Endpoint</th>
+							<th>Value</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+	</div>
+	
+	<!-- Crossfilter DIV for Kinativ assay -->
+	<div id="cellKinativCrossFilterChart" class = "crossFilterChart row-fluid">
+			<div class = "span3">
+				<div id='cellConcentrationPieChart'>
+					<b>Concentration</b>(&mu;M)
+					<a class="reset" href="javascript:cellConcentrationPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span3">
+				<div id='cellActivityPieChart'>
+					<b>Activity</b>
+					<a class="reset" href="javascript:cellActivityPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span3">
+				<div id='cellSmallMoleculePieChart'>
+					<b>SmallMolecule Name</b>
+					<a class="reset" href="javascript:cellSmallMoleculePieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span5">
+				<div id='cellPerturbationMeasureBarChart'>
+					<b>Perturbation Measure</b>
+					<a class="reset" href="javascript:cellPerturbationMeasureBarChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			    </div>
+		    </div>
+		    
+		    <div  id = "cellDataTableSection" class='span6 table-graph'>
+				<table class='table table-hover dc-data-table' id='cellDataTable'>
+					<thead>
+						<tr class='header'>
+							<th>SmallMolecule</th>
+							<th>Protein</th>
+							<th>Cell</th>
+							<th>Concentration (&mu;M)</th>
+							<th>Endpoint</th>
+							<th>Value</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+	</div>
+	
+	<!-- Crossfilter DIV for Single Cell Protein Secretion Assay -->
+	<div id="cellProteinSecretionCrossFilterChart" class = "crossFilterChart row-fluid">
+			<div class = "span3">
+				<div id='cellProteinSecretionConPieChart'>
+					<b>Concentration</b>(&mu;M)
+					<a class="reset" href="javascript:cellProteinSecretionConPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span2">
+				<div id='cellProteinSecretionSmallMoleculePieChart'>
+					<b>SmallMolecule</b>
+					<a class="reset" href="javascript:cellProteinSecretionSmallMoleculePieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span3">
+				<div id='cellProteinSecretionProteinPieChart'>
+					<b>Protein</b>
+					<a class="reset" href="javascript:cellProteinSecretionProteinPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span5">
+				<div id='cellProteinSecretionPMBarChart'>
+					<b>Perturbation Measure</b>
+					<a class="reset" href="javascript:cellProteinSecretionPMBarChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			    </div>
+		    </div>
+		    
+		    <div  id = "cellProteinSecretionDataTableSection" class='span6 table-graph'>
+				<table class='table table-hover dc-data-table' id='cellProteinSecretionDataTable'>
+					<thead>
+						<tr class='header'>
+							<th>SmallMolecule</th>
+							<th>Protein</th>
+							<th>Cell</th>
+							<th>Concentration (&mu;M)</th>
+							<th>Endpoint</th>
+							<th>Value</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+	</div>
+	
+	<div id ="downloadSummary">
+		<a class = "btn btn-small" onclick="downloadCFData();">Download</a>
+	</div>
+</div>

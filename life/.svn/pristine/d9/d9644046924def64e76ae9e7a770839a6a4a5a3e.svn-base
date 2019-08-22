@@ -1,0 +1,31 @@
+<!doctype html>
+
+
+ <!--
+ <link rel="stylesheet" href="/life/web/css/examples.css" type="text/css"/> 
+ <link rel="stylesheet" type="text/css" href="/life/web/css/d3.parcoords.css">
+ <link rel="stylesheet" href="/life/web/css/slick.grid.css" type="text/css"/>
+ <link rel="stylesheet" href="/life/web/css/slick.pager.css" type="text/css"/>
+ -->
+ 
+<!-- SlickGrid -->
+<link rel="stylesheet" href="/life/web/css/parallel-jquery-ui-1.8.16.custom.css" type="text/css"/>
+ <link rel="stylesheet" type="text/css" href="/life/web/css/parallel.css">
+
+<script src="/life/web/js/parallel/jquery-1.7.min.js"></script>
+<script src="/life/web/js/parallel/jquery.event.drag-2.0.min.js"></script>
+<script src="/life/web/js/parallel/slick.core.js"></script>
+<script src="/life/web/js/parallel/slick.grid.js"></script>
+<script src="/life/web/js/parallel/slick.pager.js"></script>
+<script src="/life/web/js/parallel/slick.dataview.js"></script>
+<!-- End SlickGrid -->
+
+<script type="text/javascript" src="/life/web/js/parallel/d3.min.js"></script>
+<script src="/life/web/js/parallel/d3.parcoords.js"></script>
+<script src="/life/web/js/parallel/underscore.js"></script>
+<script src="/life/web/js/parallel/divgrid.js"></script>
+<div id="example" class="parcoords" style="height:240px;"></div>
+<div id="grid"></div>
+<div id="pager"></div>
+<script id="brushing" src="/life/web/js/parallel/parallel.js"></script>
+<script type="text/javascript" >loadParallelChart();</script>

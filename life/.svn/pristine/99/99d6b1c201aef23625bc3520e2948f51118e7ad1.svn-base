@@ -1,0 +1,79 @@
+<div class="row">
+    <h2><span id="shrnaName" class="summaryHeader"></span></h2>
+	<br></br>
+	
+     <div id="shrnaSummaryText" class="summaryText span12 paddind-top-xxl">
+	    <table id="shrnaSummaryTable" class = "summaryTable">
+	    	<tr>
+	    		<td><strong>Target Gene : </strong><span id="targetGene"></span></td>
+	    		<td><strong>Target Sequence : </strong><span id="targetSeq"></span></td>
+	    	</tr>
+	    	<tr>	
+	    		<td><strong>7 Mer Sequence : </strong><span id="sevenMerSeq"></span></td>
+	    		<td><strong>6 Mer Sequence : </strong><span id="sixMerSeq"></span></td>
+	    	</tr>
+	    </table>
+	 </div>  
+	 
+	<div id="shrnaLink" class="summaryLink span4">L1000 transcriptional profiling assay</div>
+	<br></br>
+	
+	<div id="waitImg" class="span12"></div>
+	
+	<div id="shrnaCrossFilterChart" class = "crossFilterChart row-fluid">
+			<div class = "span3">
+				<div id='concentrationPieChart'>
+					<b>Concentration</b>(&mu;M)
+					<a class="reset" href="javascript:concentrationPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span3">
+				<div id='timePointPieChart'>
+					<b>TimePoint</b>(hrs)
+					<a class="reset" href="javascript:timePointPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span3">
+				<div id='activityPieChart'>
+					<b>Activity</b>
+					<a class="reset" href="javascript:activityPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span3">
+				<div id='cellLinePieChart'>
+					<b>Cells</b>
+					<a class="reset" href="javascript:cellLinePieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			    </div>
+			</div>
+			
+			<div class = "span5">
+				<div id='perturbationMeasureBarChart'>
+					<b>Perturbation Measure</b>
+					<a class="reset" href="javascript:perturbationMeasureBarChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			    </div>
+		    </div>
+		    
+		    <div  id = "cfDataTableSection" class='span6 table-graph'>
+				<table class='table table-hover dc-data-table' id='cfDataTable'>
+					<thead>
+						<tr class='header'>
+							<th>Perturbagen</th>
+							<th>Cell</th>
+							<th>Time Point (hrs)</th>
+							<th>Concentration (&mu;M)</th>
+							<th>Endpoint</th>
+							<th>Value</th>
+							<th id="summaryGeneThId">Gene Name</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+	</div>
+	
+	<div id ="downloadSummary">
+		<a class = "btn btn-small" onclick="downloadCFData();">Download</a>
+	</div>
+</div>

@@ -1,0 +1,38 @@
+ul{
+	list-style-type:none;
+	color: black;
+	margin:0;
+	padding:0;
+} 
+
+/* unvisited link */
+a:link {
+	text-decoration:none;
+	color: FF00CC;
+}    
+
+/* visited link */
+a:visited {
+	text-decoration:none;
+} 
+
+a:active {
+	text-decoration: none
+}
+a:hover {
+	text-decoration: underline; 
+	color: #000ccc;
+}
+.navHolder{
+}
+
+#navDiv ul li{
+padding: 10px 0;
+}
+#dynamicDataTab{
+    margin-left: auto;
+    margin-right: auto;
+}
+.navLinks{
+	color:#000000
+}

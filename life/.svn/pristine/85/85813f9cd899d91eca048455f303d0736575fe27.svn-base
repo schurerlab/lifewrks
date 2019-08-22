@@ -1,0 +1,18 @@
+<link rel="stylesheet" type="text/css" href='/life/web/css/canvas.css' />
+<script type="text/javascript" src="/life/web/js/d3.v2.js"></script>
+<script type="text/javascript" src="/life/web/js/canvas/html5slider.js"></script>
+<script type="text/javascript" src="/life/web/js/canvas/canvas.js"></script>
+<body>
+	<div id="svgContainer"></div>
+	<div id="chartContainer"></div>
+	<div id="pvalueContainer"></div>
+	<div id="termContainer">
+		<div class="displayTitle">Term Name:</div>
+		<div id="nodeName" class="text-blue" style="display:none"></div>
+		<div id="termName" class="text-blue"></div>
+	</div>
+</body>
+<script type="text/javascript">
+var filename= $('#data-name').text();
+$.getScript("/life/web/js/canvas/data/"+filename+".js");
+</script>

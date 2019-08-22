@@ -1,0 +1,217 @@
+<div class="row">
+    <h2><span id="summarySmallMoleculeName" class="summaryHeader"></span></h2>
+   	<h3> &nbsp;&nbsp;<span id="summarySmallMoleculeCategory"></span></h3>
+	<br></br>
+	
+    <div id="smallMoleculeSummaryText" class="summaryText span12 paddind-top-xxl">
+		  <div class="span3">
+		  		<div><strong>LINCS ID : </strong><span id="lincsId"></span></div><br />
+		  		<div><strong>PubChem CID : </strong><span id="pubchemId"></span></div><br />
+		  		<div>Bio Availability <i  title="this compounds satisfy Lead Likeness requirements, with PSA leass than or equal to 200 and less than five fused aromatic rings" class="icon-info-sign">?</i><br />
+					                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="data-bioAvailability" class="value">value</span>
+				</div><br />
+				<div>Lipinsky 3 <i title="Lipinski Rule of 3: [useful for constructing fragment libraries for efficient lead discovery] " class="icon-info-sign">?</i><br />
+						        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="data-lipinsky3" class="value">value</span>
+			    </div>
+		  </div>
+		 
+		  <div class="span3">
+		  		<div><strong>Facility ID : </strong><span id="facilityId"></span></div><br />
+		  		<div></div><br />
+		  		<div>Lipinsky 5 <i title="Lipinski Rule of 5 (4 of 4): [rule of thumb to evaluate druglikeness ChemAxon function] " class="icon-info-sign">?</i><br />
+					            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="data-lipinsky5"  class="value">value</span>
+		  		</div><br />
+				<div>Lead Likeness <i title="this compounds satisfy the Lipinsky requirements, with lower molecular weight and lipophylicity"   class="icon-info-sign">?</i><br />
+					               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="data-leadLikeness" class="value">value</span>
+		        </div>
+		 </div>
+		  		
+	     <div class="span4">
+	    	<div class="span3">
+	    		<a class='thumbnail no-border' href='#thumb'>
+		    		<img id="data-image" 'src="" class="img-polaroid rounded" />
+		    		<span><img id="data-image-span" src = "" /></span>
+		    	</a>
+	     	</div>
+	</div>   
+	</div>
+	<div id="header-table-summary"></div>
+	
+	<hr style="clear:both;" class="line_break">
+	
+	<div id="summaryLinks" class="span12"></div>
+	
+	<div id="waitImg" class="span12"></div>
+	
+	<!-- Crossfilter DIV for L1000/Cell cycle state/cell growth/Apoptosis assay	 -->
+	<div id="smallMoleculeCrossFilterChart" class = "crossFilterChart row-fluid">
+			<div class = "span3">
+				<div id='concentrationPieChart'>
+					<b>Concentration</b> (&mu;M)
+					<a class="reset" href="javascript:concentrationPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span3">
+				<div id='timePointPieChart'>
+					<b>TimePoint</b>(hrs)
+					<a class="reset" href="javascript:timePointPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span3">
+				<div id='activityPieChart'>
+					<b>Activity</b>
+					<a class="reset" href="javascript:activityPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span3">
+				<div id='cellLinePieChart'>
+					<b>Cells</b>
+					<a class="reset" href="javascript:cellLinePieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			    </div>
+			</div>
+			
+			<div class = "span5">
+				<div id='perturbationMeasureBarChart'>
+					<b>Perturbation Measure</b>
+					<a class="reset" href="javascript:perturbationMeasureBarChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			    </div>
+		    </div>
+		    
+		    <div  id = "cfDataTableSection" class='span6 table-graph'>
+				<table class='table table-hover dc-data-table' id='cfDataTable'>
+					<thead>
+						<tr class='header'>
+							<th>SmallMolecule</th>
+							<th>Cell</th>
+							<th>Time Point (hrs)</th>
+							<th>Concentration (&mu;M)</th>
+							<th>Endpoint</th>
+							<th>Value</th>
+							<th id="summaryGeneThId">Gene Name</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+	</div>
+	
+	<!-- Crossfilter DIV for Phosphoprotein assay -->
+	<div id="smallMoleculePPCrossFilterChart" class = "crossFilterChart row-fluid">
+			<div class = "span3">
+				<div id='smallMoleculeConcentrationPieChart'>
+					<b>Concentration</b>(&mu;M)
+					<a class="reset" href="javascript:smallMoleculeConcentrationPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span3">
+				<div id='smallMoleculeTimePointPieChart'>
+					<b>TimePoint</b>(hrs)
+					<a class="reset" href="javascript:smallMoleculeTimePointPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span3">
+				<div id='smallMoleculeCellLinePieChart'>
+					<b>Cells</b>
+					<a class="reset" href="javascript:smallMoleculeCellLinePieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span5">
+				<div id='smallMoleculePerturbationMeasureBarChart'>
+					<b>Perturbation Measure</b>
+					<a class="reset" href="javascript:smallMoleculePerturbationMeasureBarChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			    </div>
+		    </div>
+		    
+		    <div  id = "smallMoleculeDataTableSection" class='span6 table-graph'>
+				<table class='table table-hover dc-data-table' id='smallMoleculeDataTable'>
+					<thead>
+						<tr class='header'>
+							<th>SmallMolecule</th>
+							<th>Protein</th>
+							<th>Cell</th>
+							<th>Time Point (hrs)</th>
+							<th>Concentration (&mu;M)</th>
+							<th>Endpoint</th>
+							<th>Value</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+	</div>
+	
+	<!-- Crossfilter DIV for Single Cell Protein Secretion Assay -->
+	<div id="sMProteinSecretionCrossFilterChart" class = "crossFilterChart row-fluid">
+			<div class = "span3">
+				<div id='smProteinSecretionConPieChart'>
+					<b>Concentration</b>(&mu;M)
+					<a class="reset" href="javascript:smProteinSecretionConPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span2">
+				<div id='smProteinSecretionCellPieChart'>
+					<b>Cells</b>
+					<a class="reset" href="javascript:smProteinSecretionCellPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span3">
+				<div id='smProteinSecretionProteinPieChart'>
+					<b>Protein</b>
+					<a class="reset" href="javascript:smProteinSecretionProteinPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span5">
+				<div id='smProteinSecretionPMBarChart'>
+					<b>Perturbation Measure</b>
+					<a class="reset" href="javascript:smProteinSecretionPMBarChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			    </div>
+		    </div>
+		    
+		    <div  id = "smProteinSecretionDataTableSection" class='span6 table-graph'>
+				<table class='table table-hover dc-data-table' id='smProteinSecretionDataTable'>
+					<thead>
+						<tr class='header'>
+							<th>SmallMolecule</th>
+							<th>Protein</th>
+							<th>Cell</th>
+							<th>Concentration (&mu;M)</th>
+							<th>Endpoint</th>
+							<th>Value</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+	</div>
+	
+	<div id="wheel-container">
+		<div id="vis">
+			<img src="full.png">
+			<div id="chart-circle-container">
+				<div id="chart-circle">
+					<div id="chart-coffee-sector-name">What's in LIFE.wrx?</div>
+				</div>
+			</div>
+		</div>
+	
+		<div id="legend">
+			<p class="align-center text-blue">Activity</p>
+			<img class="rounded" src="/life/web/images/legend.png" />
+	
+			<div id="labels-container">
+				<span id="coffeePercentStartVal" class="label label-default float-left">0%</span>
+			    <span id="coffeePercentEndVal" class="label label-default float-right">100%</span>
+			</div>
+		</div>
+	</div>
+	
+	<div id ="downloadSummary">
+		<a class = "btn btn-small" onclick="downloadCFData();">Download</a>
+	</div>
+</div>

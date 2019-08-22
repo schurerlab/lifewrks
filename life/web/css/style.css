@@ -1,0 +1,131 @@
+.content {
+	width: 1014px;
+	min-height: 500px;
+	margin: 0px auto;
+	padding: 0 5px 20px 5px;
+	background: #ffffff;
+	box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+	text-align: left;
+}
+
+#contextMenu {
+	float: right;
+	border-radius: 8px 8px 0 0;
+	height: 22px;
+}
+
+#contextMenu a {
+	display: inline-block;
+	height: 18px;
+	padding: 3px 3px 3px 20px;
+	background: url('/life/web/images/menu-bg.jpg') repeat-x;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-left: 5px;
+}
+
+#contextMenu a.add {
+	background: #10c8ff url('/life/web/images/add.png') no-repeat;
+	background-position: 2px 3px;
+}
+
+#contextMenu a.manage {
+	background: #10c8ff url('/life/web/images/list.png') no-repeat;
+	background-position: 2px 3px;
+}
+
+#pageNum,#resultsCount {
+	font-weight: normal;
+	font-size: 13px;
+	float: left;
+}
+
+#contextMenu a.add:hover {
+	background: #ffb966 url('/life/web/images/add.png') no-repeat;
+	background-position: 2px 3px;
+}
+
+#contextMenu a.manage:hover {
+	background: #ffb966 url('/life/web/images/list.png') no-repeat;
+	background-position: 2px 3px;
+}
+
+#message {
+	border-radius: 3px;
+	display: inline-block;
+	color: #ffffff;
+	height: 18px;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 3px 5px 2px 24px;
+}
+
+#tabHolder {
+	width: 100%;
+	height: 32px;
+	margin-top: 20px;
+	border-radius: 8px 8px 0 0;
+}
+
+#tabs {
+	float: left;
+	width: 100%;
+	font-size: 0.9em;
+}
+
+#tabs a {
+	color: #000;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 8px 8px 0 0;
+	width: 156px;
+	float: left;
+	border: 2px solid transparent;
+	padding: 4px 0;
+}
+
+#tabs a.active,#tabs a:hover {
+	border: 2px solid #cccccc;
+	background: #39a4e1;
+	color: #ffffff;
+	text-shadow: 0 3 0px 1px #444444;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#39a4e1),
+		to(#22ddff) );
+	background-image: -webkit-linear-gradient(#39a4e1, #22ddff);
+	background-image: -moz-linear-gradient(#39a4e1, #22ddff);
+	background-image: -ms-linear-gradient(#39a4e1, #22ddff);
+	background-image: -o-linear-gradient(#39a4e1, #22ddff);
+	background-image: linear-gradient(#39a4e1, #22ddff);
+	border-width: 2px 2px 0;
+	padding: 6px 0;
+}
+
+td,th {
+	text-align: center;
+	font-size: 0.8em;
+}
+
+th {
+	font-weight: 400;
+	font-style: italic;
+}
+
+#header {
+	height: 55px;
+	margin-top: -20px;
+}
+
+#dynamic {
+	clear: both;
+}
+
+table.dataTable thead th {
+	padding: 3px 10px;
+}
+
+table.dataTable tr.odd,table.dataTable tr.odd td.sorting_1 {
+	background: #f0f0f0;
+}

@@ -1,0 +1,8 @@
+Participants,pKd,Percent Kinase Inhibition,IC50,Percent cell viability,Percent apoptosis,Percent cytotoxicty,Cell cycle: percent interphase,Cell cycle: percent mitosis,Cell cycle: percent S phase,Cell cycle: percent G2-M arrested,Cell cycle: percent non-arrested,Gene Expression
+KinomeScan Assay,4.0413926851582245,4.645422269349091,0,0,0,0,0,0,0,0,0,0
+Kinative Assay,0,2.740362689494243,3.0606978403536114,0,0,0,0,0,0,0,0,0
+Cell Viability Assay,0,0,0,4.863322860120455,0,0,0,0,0,0,0,0
+Apoptosis Assay,0,0,0,0,4.505149978319905,4.505149978319905,0,0,0,0,0,0
+Cell Cycle State Assay,0,0,0,0,0,0,4.302763708472981,4.302547372487485,4.302547372487485,4.302547372487485,4.302547372487485,0
+L1000 Transcriptional Response Assay,0,0,0,0,0,0,0,0,0,0,0,8.12323012268931
+

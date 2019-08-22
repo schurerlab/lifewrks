@@ -1,0 +1,123 @@
+[
+    {
+        "participants": [
+           
+            [
+                "Small Molecules",
+                100,
+                100
+            ],
+            [
+                "Proteins",
+                442,
+                200
+            ]
+        ],
+        "total": 552,
+        "name": "KinomeScan Assay"
+    },
+    {
+        "participants": [
+           
+            [
+                "Small Molecules",
+                55,
+                100
+            ],
+            [
+                "Proteins",
+                150,
+                200
+            ],
+            [
+                "Cell Lines",
+                3,
+                300
+            ]
+        ],
+        "total": 208,
+        "name": "Kinative Assay"
+    },
+    {
+        "participants": [
+           
+            [
+                "Cell Lines",
+                730,
+                300
+            ],
+            [
+                "Small Molecules",
+                80,
+                100
+            ]
+        ],
+        "total": 800,
+        "name": "Cell Viability Assay"
+    },
+    {
+        "participants": [
+            
+            [
+                "Cell Lines",
+                64,
+                300
+            ],
+            [
+                "Small Molecules",
+                60,
+                100
+            ]
+        ],
+        "total": 124,
+        "name": "Apoptosis assay"
+    },
+    {
+        "participants": [
+            
+            [
+                "Cell Lines",
+                65,
+                300
+            ],
+            [
+                "Small Molecules",
+                80,
+                100
+            ]
+        ],
+        "total": 145,
+        "name": "Cell cycle state assay"
+    },
+    {
+        "participants": [
+            [
+                "cDNAs",
+                3550,
+                500
+            ],
+            [
+                "Transcribed Genes",
+                1000,
+                400
+                
+            ],
+            [
+                "Small Molecules",
+                4400,
+                100
+            ],
+            [
+                "Cell Lines",
+                12,
+                300
+            ],
+            [
+                "shRNA",
+                5000,
+                600
+            ]
+        ],
+        "total": 13962,
+        "name": "L1000 transcriptional profiling assay"
+    }]

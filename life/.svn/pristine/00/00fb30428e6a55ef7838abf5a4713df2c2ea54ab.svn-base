@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+
+  <display-name>Life</display-name>
+  <description>
+     LINCS Information FramEwork
+  </description>
+
+    <welcome-file-list>
+        <welcome-file>home</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>home</servlet-name>
+       <jsp-file>/web/jsp/index.jsp</jsp-file> 
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>home</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>browse</servlet-name>
+       <jsp-file>/web/jsp/browse.jsp</jsp-file> 
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>browse</servlet-name>
+        <url-pattern>/browse</url-pattern>
+    </servlet-mapping>
+ 
+  
+   <servlet>
+        <servlet-name>statistics</servlet-name>
+       <jsp-file>/web/jsp/statistics.jsp</jsp-file> 
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>statistics</servlet-name>
+        <url-pattern>/statistics</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>structure</servlet-name>
+       <jsp-file>/web/jsp/structure.jsp</jsp-file> 
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>structure</servlet-name>
+        <url-pattern>/structure</url-pattern>
+    </servlet-mapping>
+ 
+  
+  
+    <servlet>
+        <servlet-name>perturbation</servlet-name>
+        <jsp-file>/web/jsp/perturbationSearch.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>perturbation</servlet-name>
+        <url-pattern>/perturbation</url-pattern>
+    </servlet-mapping> 
+ 
+  
+    <servlet>
+        <servlet-name>participant</servlet-name>
+        <jsp-file>/web/jsp/participantSearch.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>participant</servlet-name>
+        <url-pattern>/participant</url-pattern>
+    </servlet-mapping> 
+  
+    
+    <servlet>
+        <servlet-name>set-index</servlet-name>
+        <jsp-file>/web/jsp/setIndex.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>set-index</servlet-name>
+        <url-pattern>/set-index</url-pattern>
+    </servlet-mapping> 
+  
+    <servlet>
+        <servlet-name>settings</servlet-name>
+        <jsp-file>/web/jsp/settings.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>settings</servlet-name>
+        <url-pattern>/settings</url-pattern>
+    </servlet-mapping>    
+
+ 	<servlet>
+        <servlet-name>update-list</servlet-name>
+        <jsp-file>/web/jsp/updateList.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>update-list</servlet-name>
+        <url-pattern>/update-list</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>element-list</servlet-name>
+    	<jsp-file>/web/jsp/elementList.jsp</jsp-file>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>element-list</servlet-name>
+    	<url-pattern>/element-list</url-pattern>
+  	</servlet-mapping>
+  	
+	<servlet>
+        <display-name>structure-search</display-name>
+        <servlet-name>structure-search</servlet-name>
+        <servlet-class>edu.miami.ccs.life.MarvinUIResults</servlet-class>
+       </servlet>
+    <servlet-mapping>
+        <servlet-name>structure-search</servlet-name>
+        <url-pattern>/structure-search</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <display-name>wheel-feeder</display-name>
+        <servlet-name>wheel-feeder</servlet-name>
+        <servlet-class>edu.miami.ccs.life.KinomeScanWheelFeeder</servlet-class>
+       </servlet>
+    <servlet-mapping>
+        <servlet-name>wheel-feeder</servlet-name>
+        <url-pattern>/wheel-feeder</url-pattern>
+    </servlet-mapping>
+    
+  	<servlet>
+        <display-name>list-fetcher</display-name>
+        <servlet-name>list-fetcher</servlet-name>
+        <servlet-class>edu.miami.ccs.life.ListFetcher</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>list-fetcher</servlet-name>
+        <url-pattern>/list-fetcher</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <display-name>assayinfo</display-name>
+        <servlet-name>assayinfo</servlet-name>
+        <servlet-class>edu.miami.ccs.life.AssayInfo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>assayinfo</servlet-name>
+        <url-pattern>/api/assayinfo</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <display-name>centerview</display-name>
+        <servlet-name>centerview</servlet-name>
+        <servlet-class>edu.miami.ccs.life.CenterView</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>centerview</servlet-name>
+        <url-pattern>/api/centerview</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <display-name>statsprinter</display-name>
+        <servlet-name>statsprinter</servlet-name>
+        <servlet-class>edu.miami.ccs.life.StatsLoader</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>statsprinter</servlet-name>
+        <url-pattern>/api/statsprinter</url-pattern>
+    </servlet-mapping>
+     
+    <servlet>
+        <display-name>assayview</display-name>
+        <servlet-name>assayview</servlet-name>
+        <servlet-class>edu.miami.ccs.life.AssayView</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>assayview</servlet-name>
+        <url-pattern>/api/assayview</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <display-name>participantinfo</display-name>
+        <servlet-name>participantinfo</servlet-name>
+        <servlet-class>edu.miami.ccs.life.ParticipantInfo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>participantinfo</servlet-name>
+        <url-pattern>/api/constituentinfo</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <display-name>getdata</display-name>
+        <servlet-name>getdata</servlet-name>
+        <servlet-class>edu.miami.ccs.life.GetData</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getdata</servlet-name>
+        <url-pattern>/api/getdata</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <display-name>restrict-fetcher</display-name>
+        <servlet-name>restrict-fetcher</servlet-name>
+        <servlet-class>edu.miami.ccs.life.RestrictListFetcher</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>restrict-fetcher</servlet-name>
+        <url-pattern>/restrict-fetcher</url-pattern>
+    </servlet-mapping>
+   	
+  	<servlet>
+        <display-name>data-fetcher</display-name>
+        <servlet-name>data-fetcher</servlet-name>
+        <servlet-class>edu.miami.ccs.life.DataFetcher</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>data-fetcher</servlet-name>
+        <url-pattern>/data-fetcher</url-pattern>
+    </servlet-mapping>
+
+   	
+  	<servlet>
+        <display-name>download</display-name>
+        <servlet-name>download</servlet-name>
+        <servlet-class>edu.miami.ccs.life.Download</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>download</servlet-name>
+        <url-pattern>/download</url-pattern>
+    </servlet-mapping>
+  
+
+  <servlet>
+        <display-name>summary-download</display-name>
+        <servlet-name>summary-download</servlet-name>
+        <servlet-class>edu.miami.ccs.life.SummaryDownload</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>summary-download</servlet-name>
+        <url-pattern>/summary-download</url-pattern>
+    </servlet-mapping>
+
+  <servlet>
+        <display-name>list-download</display-name>
+        <servlet-name>list-download</servlet-name>
+        <servlet-class>edu.miami.ccs.life.ListDownload</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>list-download</servlet-name>
+        <url-pattern>/list-download</url-pattern>
+    </servlet-mapping>
+    
+  	
+<servlet>
+    	<servlet-name>compare-list</servlet-name>
+    	<jsp-file>/web/jsp/compareList.jsp</jsp-file>
+ 	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>compare-list</servlet-name>
+    	<url-pattern>/compare-list</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+    	<display-name>compare-barchart</display-name>
+    	<servlet-name>compare-barchart</servlet-name>
+    	<servlet-class>edu.miami.ccs.life.CompareBarChart</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>compare-barchart</servlet-name>
+    	<url-pattern>/compare-barchart</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<display-name>filter-barchart</display-name>
+    	<servlet-name>filter-barchart</servlet-name>
+    	<servlet-class>edu.miami.ccs.life.BarChartDataFeeder</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>filter-barchart</servlet-name>
+    	<url-pattern>/filter-barchart</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<display-name>compare-piechart</display-name>
+    	<servlet-name>compare-piechart</servlet-name>
+    	<servlet-class>edu.miami.ccs.life.PieChartFeeder</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>compare-piechart</servlet-name>
+    	<url-pattern>/compare-piechart</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<display-name>filter-piechart</display-name>
+    	<servlet-name>filter-piechart</servlet-name>
+    	<servlet-class>edu.miami.ccs.life.FilterPieChartFeeder</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>filter-piechart</servlet-name>
+    	<url-pattern>/filter-piechart</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<display-name>compare-table</display-name>
+    	<servlet-name>compare-table</servlet-name>
+    	<servlet-class>edu.miami.ccs.life.CompareTableFeeder</servlet-class>
+  	</servlet>
+  	
+  	<servlet-mapping>
+    	<servlet-name>compare-table</servlet-name>
+    	<url-pattern>/compare-table</url-pattern>
+    </servlet-mapping>
+    
+        
+    <servlet>
+    	<display-name>tags-fetcher</display-name>
+    	<servlet-name>tags-fetcher</servlet-name>
+    	<servlet-class>edu.miami.ccs.life.TagsFetcher</servlet-class>
+  	</servlet>
+  	
+  	<servlet-mapping>
+    	<servlet-name>tags-fetcher</servlet-name>
+    	<url-pattern>/tags-fetcher</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+    	<display-name>filter-table</display-name>
+    	<servlet-name>filter-table</servlet-name>
+    	<servlet-class>edu.miami.ccs.life.FilterCompareTableFeeder</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>filter-table</servlet-name>
+    	<url-pattern>/filter-table</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<display-name>endpoint-fetcher</display-name>
+    	<servlet-name>endpoint-fetcher</servlet-name>
+    	<servlet-class>edu.miami.ccs.life.EndpointFetcher</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>endpoint-fetcher</servlet-name>
+    	<url-pattern>/endpoint-fetcher</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<display-name>condition-fetcher</display-name>
+    	<servlet-name>condition-fetcher</servlet-name>
+    	<servlet-class>edu.miami.ccs.life.ConditionsFetcher</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>condition-fetcher</servlet-name>
+    	<url-pattern>/condition-fetcher</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<display-name>bars-fetcher</display-name>
+    	<servlet-name>bars-fetcher</servlet-name>
+    	<servlet-class>edu.miami.ccs.life.BarsDataFetcher</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>bars-fetcher</servlet-name>
+    	<url-pattern>/bars-fetcher</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>update-complist</servlet-name>
+        <jsp-file>/web/jsp/updateCompareList.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>update-complist</servlet-name>
+        <url-pattern>/update-complist</url-pattern>
+    </servlet-mapping>
+
+
+	<servlet>
+        <servlet-name>perturbation-summary</servlet-name>
+        <servlet-class>edu.miami.ccs.life.FetchPerturbationSummary</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>perturbation-summary</servlet-name>
+        <url-pattern>/perturbation-summary</url-pattern>
+    </servlet-mapping>
+
+
+	<servlet>
+        <servlet-name>ProcessingDataFetcher</servlet-name>
+        <servlet-class>edu.miami.ccs.life.ProcessingDataFetcher</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProcessingDataFetcher</servlet-name>
+        <url-pattern>/ProcessingDataFetcher</url-pattern>
+    </servlet-mapping>
+    
+ 	<servlet>
+        <servlet-name>fetch-summary</servlet-name>
+        <servlet-class>edu.miami.ccs.life.FetchSummary</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>fetch-summary</servlet-name>
+        <url-pattern>/fetch-summary</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>HeatMapDataFetcher</servlet-name>
+        <servlet-class>edu.miami.ccs.life.HeatMapDataFetcher</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HeatMapDataFetcher</servlet-name>
+        <url-pattern>/HeatMapDataFetcher</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>HMSHeatMapDataFetcher</servlet-name>
+        <servlet-class>edu.miami.ccs.life.HMSHeatMapDataFetcher</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HMSHeatMapDataFetcher</servlet-name>
+        <url-pattern>/hms/heat-map-data</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>HMSFetchSummary</servlet-name>
+        <servlet-class>edu.miami.ccs.life.HMSFetchSummary</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HMSFetchSummary</servlet-name>
+        <url-pattern>/hms/fetch-summary</url-pattern>
+    </servlet-mapping>
+       
+    <servlet>
+        <servlet-name>HMSProcessingDataFetcher</servlet-name>
+        <servlet-class>edu.miami.ccs.life.HMSProcessingDataFetcher</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HMSProcessingDataFetcher</servlet-name>
+        <url-pattern>/hms/processing</url-pattern>
+    </servlet-mapping>  
+   
+     <servlet>
+    	<servlet-name>hms-summary</servlet-name>
+    	<jsp-file>/web/jsp/hmsSummary.jsp</jsp-file>
+  	</servlet>
+  
+  <servlet-mapping>
+    <servlet-name>hms-summary</servlet-name>
+    <url-pattern>/hms/summary</url-pattern>
+  </servlet-mapping>
+   
+    
+  	<servlet>
+    	<servlet-name>summary</servlet-name>
+    	<jsp-file>/web/jsp/summary.jsp</jsp-file>
+  	</servlet>
+  
+  <servlet-mapping>
+    <servlet-name>summary</servlet-name>
+    <url-pattern>/summary</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    	<servlet-name>search</servlet-name>
+    	<jsp-file>/web/jsp/search.jsp</jsp-file>
+  	</servlet>
+  
+  <servlet-mapping>
+    <servlet-name>search</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>filter</servlet-name>
+       <jsp-file>/web/jsp/filter.jsp</jsp-file> 
+    </servlet>
+    
+   <servlet-mapping>
+    <servlet-name>filter</servlet-name>
+    <url-pattern>/filter</url-pattern>
+  </servlet-mapping>
+    
+   <servlet>
+       <servlet-name>APIdemo</servlet-name>
+       <servlet-class>edu.miami.ccs.life.ApiDemo</servlet-class>
+   </servlet>
+   <servlet-mapping>
+       <servlet-name>APIdemo</servlet-name>
+       <url-pattern>/ApiDemo</url-pattern>
+   </servlet-mapping>
+    
+    
+    	<servlet>
+    	<servlet-name>apidemo</servlet-name>
+    	<jsp-file>/web/jsp/ApiDemo.jsp</jsp-file>
+  	</servlet>
+  	
+  	
+  	
+  	
+  	 <servlet>
+       <servlet-name>StaticsData</servlet-name>
+       <servlet-class>edu.miami.ccs.life.StaticsData</servlet-class>
+   </servlet>
+   <servlet-mapping>
+       <servlet-name>StaticsData</servlet-name>
+       <url-pattern>/StaticsData</url-pattern>
+   </servlet-mapping>
+    	<servlet>
+    	<servlet-name>staticsData</servlet-name>
+    	<jsp-file>/web/jsp/staticsData.jsp</jsp-file>
+  	</servlet>
+  
+  <servlet-mapping>
+    <servlet-name>apidemo</servlet-name>
+    <url-pattern>/apidemo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+       <servlet-name>view-data</servlet-name>
+       <servlet-class>edu.miami.ccs.life.FetchViewDataForL100</servlet-class>
+  </servlet>
+    
+  <servlet-mapping>
+      <servlet-name>view-data</servlet-name>
+      <url-pattern>/view-data</url-pattern>
+  </servlet-mapping>
+    
+  <servlet>
+      <servlet-name>view-data-kinomescan</servlet-name>
+      <servlet-class>edu.miami.ccs.life.FetchViewDataKinomeScan</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+      <servlet-name>view-data-kinomescan</servlet-name>
+      <url-pattern>/view-data-kinomescan</url-pattern>
+  </servlet-mapping>  
+  
+    <servlet>
+      <servlet-name>view-data-cell</servlet-name>
+      <servlet-class>edu.miami.ccs.life.FetchViewDataCellBased</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+      <servlet-name>view-data-cell</servlet-name>
+      <url-pattern>/view-data-cell</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+        <servlet-name>terms-of-use</servlet-name>
+        <jsp-file>/web/jsp/termsOfUse.jsp</jsp-file>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>terms-of-use</servlet-name>
+        <url-pattern>/terms-of-use</url-pattern>
+    </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>acknowledgement</servlet-name>
+        <jsp-file>/web/jsp/acknowledgement.jsp</jsp-file>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>acknowledgement</servlet-name>
+        <url-pattern>/acknowledgement</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>api</servlet-name>
+        <jsp-file>/web/jsp/api.jsp</jsp-file>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>api</servlet-name>
+        <url-pattern>/api</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>assay-info</servlet-name>
+        <jsp-file>/web/jsp/assay-info.jsp</jsp-file>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>assay-info</servlet-name>
+        <url-pattern>/api/assay-info</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>assay-view</servlet-name>
+        <jsp-file>/web/jsp/assay-view.jsp</jsp-file>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>assay-view</servlet-name>
+        <url-pattern>/api/assay-view</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>center-view</servlet-name>
+        <jsp-file>/web/jsp/center-view.jsp</jsp-file>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>center-view</servlet-name>
+        <url-pattern>/api/center-view</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>data-in-life</servlet-name>
+        <jsp-file>/web/jsp/data-grid.jsp</jsp-file>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>data-in-life</servlet-name>
+        <url-pattern>/help/data-in-life</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>get-data</servlet-name>
+        <jsp-file>/web/jsp/get-data.jsp</jsp-file>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>get-data</servlet-name>
+        <url-pattern>/api/get-data</url-pattern>
+        
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>contituent-info</servlet-name>
+        <jsp-file>/web/jsp/contituent-info.jsp</jsp-file>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>contituent-info</servlet-name>
+        <url-pattern>/api/constituent-info</url-pattern>
+    </servlet-mapping>
+    
+</web-app>

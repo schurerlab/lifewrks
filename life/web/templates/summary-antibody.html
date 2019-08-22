@@ -1,0 +1,73 @@
+<div class="row">
+    <h2><span id="abName" class="summaryHeader"></span></h2>
+	<br></br>
+	
+     <div id="abSummaryText" class="summaryText span12 paddind-top-xxl">
+	    <table id="abSummaryTable" class = "summaryTable">
+	    	<tr>	
+	    		<td><strong>Uniprot Id : </strong><span id="uniprot"></span></td>
+	    		<td><strong>Gene Id : </strong><span id="refseqid"></span></td>
+	    	</tr>
+	    	<tr>
+	    		<td><strong>Description : </strong><span id="description"></span></td>
+	    		<td><strong>Symbol : </strong><span id="symbol"></span></td>
+	    	</tr>
+	    	
+	    </table>
+	 </div>
+	
+	<div id="abLink" class="summaryLink span4">Single cell protein secretion profiling assay</div>
+	<br></br>
+	 
+	<div id="waitImg" class="span12"></div>
+	
+	<!-- Crossfilter DIV for Single Cell Protein Secretion Assay -->
+	<div id="abProteinSecretionCrossFilterChart" class = "crossFilterChart row-fluid">
+			<div class = "span4">
+				<div id='abProteinSecretionConPieChart'>
+					<b>Concentration</b>(&mu;M)
+					<a class="reset" href="javascript:abProteinSecretionConPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span4">
+				<div id='abProteinSecretionSmallMoleculePieChart'>
+					<b>SmallMolecule</b>
+					<a class="reset" href="javascript:abProteinSecretionSmallMoleculePieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span4">
+				<div id='abProteinSecretionCellPieChart'>
+					<b>Cells</b>
+					<a class="reset" href="javascript:abProteinSecretionCellPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				</div>
+			</div>
+			
+			<div class = "span5">
+				<div id='abProteinSecretionPMBarChart'>
+					<b>Perturbation Measure</b>
+					<a class="reset" href="javascript:abProteinSecretionPMBarChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+			    </div>
+		    </div>
+		    
+		    <div  id = "abProteinSecretionDataTableSection" class='span6 table-graph'>
+				<table class='table table-hover dc-data-table' id='abProteinSecretionDataTable'>
+					<thead>
+						<tr class='header'>
+							<th>SmallMolecule</th>
+							<th>Protein</th>
+							<th>Cell</th>
+							<th>Concentration (&mu;M)</th>
+							<th>Endpoint</th>
+							<th>Value</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+	</div>
+	
+	<div id ="downloadSummary">
+		<a class = "btn btn-small" onclick="downloadCFData();">Download</a>
+	</div>
+</div>
