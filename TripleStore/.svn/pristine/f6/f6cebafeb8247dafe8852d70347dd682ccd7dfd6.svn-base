@@ -1,0 +1,3495 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY life_model_v1 "http://bioassayontology.org/life_model_v1.owl#" >
+    <!ENTITY life_model_v13 "http://bioassayontology.org/life_model_v1.owl#50" >
+    <!ENTITY life_model_v12 "http://bioassayontology.org/life_model_v1.owl#100" >
+    <!ENTITY MGH "http://bioassayontology.org/life_model_v1.owl#MGH/" >
+    <!ENTITY Mitchison_Lab_two- "http://bioassayontology.org/life_model_v1.owl#Mitchison_Lab_two-/" >
+]>
+
+
+<rdf:RDF xmlns="http://bioassayontology.org/life_model_v1.owl#"
+     xml:base="http://bioassayontology.org/life_model_v1.owl"
+     xmlns:Mitchison_Lab_two-="&life_model_v1;Mitchison_Lab_two-/"
+     xmlns:life_model_v12="&life_model_v1;100"
+     xmlns:life_model_v1="http://bioassayontology.org/life_model_v1.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:MGH="&life_model_v1;MGH/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:life_model_v13="&life_model_v1;50"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about="http://bioassayontology.org/life_model_v1.owl">
+        <owl:versionInfo>Version 1.1</owl:versionInfo>
+        <rdfs:comment>Hande Küçük</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001050 -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;LIFE_0001050">
+        <rdfs:label>interacts with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001051 -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;LIFE_0001051">
+        <rdfs:label>part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001052 -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;LIFE_0001052">
+        <rdfs:label>has part</rdfs:label>
+        <owl:inverseOf rdf:resource="&life_model_v1;LIFE_0001051"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001053 -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;LIFE_0001053">
+        <rdfs:label>participates in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001054 -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;LIFE_0001054">
+        <rdfs:label>affects</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001055 -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;LIFE_0001055">
+        <rdfs:label>translates into</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001056 -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;LIFE_0001056">
+        <rdfs:label>quantified as</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_assay_format -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_assay_format">
+        <rdfs:label>has assay format</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_assay_medium -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_assay_medium">
+        <rdfs:label>has assay medium</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_assay_method -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_assay_method">
+        <rdfs:label>has assay method</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_attribute -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_attribute">
+        <rdfs:label>has attribute</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_bioassay -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_bioassay">
+        <rdfs:label>has bioassay</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_bioassay_component -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_bioassay_component">
+        <rdfs:label>has bioassay component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_component -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_component">
+        <rdfs:label>has component</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_cut_off_value -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_cut_off_value">
+        <rdfs:label>has cut off value</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&life_model_v1;has_attribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_detection_technology -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_detection_technology">
+        <rdfs:label>has detection technology</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_disease -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_disease">
+        <rdfs:label>has disease</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_endpoint -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_endpoint">
+        <rdfs:label>has endpoint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_id -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_id">
+        <rdfs:label>has id</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&life_model_v1;has_attribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_labeling_site -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_labeling_site">
+        <rdfs:label>has labeling site</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_measure_group -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_measure_group">
+        <rdfs:label>has measure group</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_mode_of_action -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_mode_of_action">
+        <rdfs:label>has mode of action</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_model_biological_system -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_model_biological_system">
+        <rdfs:label>has model biological system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_model_system -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_model_system">
+        <rdfs:label>has model system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_modification -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_modification">
+        <rdfs:label>has modification</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_molecular_structure -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_molecular_structure">
+        <rdfs:label>has molecular structure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_mutation -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_mutation">
+        <rdfs:label>has mutation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_name -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_name">
+        <rdfs:label>has name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_organ -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_organ">
+        <rdfs:label>has organ</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_organism -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_organism">
+        <rdfs:label>has organism</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_participant -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_participant">
+        <rdfs:label>has participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_perturbagen -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_perturbagen">
+        <rdfs:label>has perturbagen</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&life_model_v1;has_participant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_perturbation_type -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_perturbation_type">
+        <rdfs:label>has perturbation type</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&life_model_v1;has_attribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_result -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_result">
+        <rdfs:label>has result</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_role -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_role">
+        <rdfs:label>has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_rule -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_rule">
+        <rdfs:label>has rule</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&life_model_v1;has_attribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_scanned_process -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_scanned_process">
+        <rdfs:label>has scanned process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_sequence -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_sequence">
+        <rdfs:label>has sequence</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_synonym -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_synonym">
+        <rdfs:label>has synonym</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_synonymous_id -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_synonymous_id">
+        <rdfs:label>has synonymous id</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_synonymous_name -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_synonymous_name">
+        <rdfs:label>has synonymous name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_target -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_target">
+        <rdfs:label>has target</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&life_model_v1;has_participant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_tissue -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_tissue">
+        <rdfs:label>has tissue</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_type -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_type">
+        <rdfs:label>has type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_unit_of_measurement -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;has_unit_of_measurement">
+        <rdfs:label>has unit of measurement</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&life_model_v1;has_attribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#is_assay_format_of -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;is_assay_format_of">
+        <rdfs:label>is assay format of</rdfs:label>
+        <owl:inverseOf rdf:resource="&life_model_v1;has_assay_format"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#targets -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;targets">
+        <rdfs:label>targets</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#used_for_measuring -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;used_for_measuring">
+        <rdfs:label>used for measuring</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#uses_bioassay -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;uses_bioassay">
+        <rdfs:label>uses bioassay</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#uses_model_system -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;uses_model_system">
+        <rdfs:label>uses model system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#utilize -->
+
+    <owl:ObjectProperty rdf:about="&life_model_v1;utilize">
+        <rdfs:label>utilizes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_cell_line_name -->
+
+    <owl:DatatypeProperty rdf:about="&life_model_v1;has_cell_line_name">
+        <rdfs:label>has cell line name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#has_percent_response_value -->
+
+    <owl:DatatypeProperty rdf:about="&life_model_v1;has_percent_response_value">
+        <rdfs:label>has percent response value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#participant_name -->
+
+    <owl:DatatypeProperty rdf:about="&life_model_v1;participant_name">
+        <rdfs:label>has participant name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#100_percent_growth_inhibition -->
+
+    <owl:Class rdf:about="&life_model_v1;100_percent_growth_inhibition">
+        <rdfs:label>100 percent growth inhibition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_growth_inhibition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#50_percent_activation -->
+
+    <owl:Class rdf:about="&life_model_v1;50_percent_activation">
+        <rdfs:label>50 percent activation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_activation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#50_percent_cytotoxicity -->
+
+    <owl:Class rdf:about="&life_model_v1;50_percent_cytotoxicity">
+        <rdfs:label>50 percent cytotoxicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_cytotoxicity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#50_percent_growth_inhibition -->
+
+    <owl:Class rdf:about="&life_model_v1;50_percent_growth_inhibition">
+        <rdfs:label>50 percent growth inhibition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_growth_inhibition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#50_percent_inhibition -->
+
+    <owl:Class rdf:about="&life_model_v1;50_percent_inhibition">
+        <rdfs:label>50 percent inhibition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_inhibition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#50_percent_viability -->
+
+    <owl:Class rdf:about="&life_model_v1;50_percent_viability">
+        <rdfs:label>50 percent viability</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&life_model_v1;percent_viability"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_percent_response_value"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="&xsd;float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="&xsd;float">49.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_percent_response_value"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="&xsd;float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="&xsd;float">51.0</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_viability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#ATCC_ID -->
+
+    <owl:Class rdf:about="&life_model_v1;ATCC_ID">
+        <rdfs:label>ATCC ID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001026"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#Apoptosis -->
+
+    <owl:Class rdf:about="&life_model_v1;Apoptosis">
+        <rdfs:label>Apoptosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;perturbation_type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#BROAD_Institute -->
+
+    <owl:Class rdf:about="&life_model_v1;BROAD_Institute">
+        <rdfs:label>BROAD Institute</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#ChEBI_ID -->
+
+    <owl:Class rdf:about="&life_model_v1;ChEBI_ID">
+        <rdfs:label>ChEBI ID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;perturbagen_ID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#Cue_Signal_Response -->
+
+    <owl:Class rdf:about="&life_model_v1;Cue_Signal_Response">
+        <rdfs:label>Cue Signal Response</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;uses_bioassay"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;signal_transduction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;utilize"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;cell_line_based_system"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001058"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#Cytokine_Secretion -->
+
+    <owl:Class rdf:about="&life_model_v1;Cytokine_Secretion">
+        <rdfs:label>Cytokine Secretion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;perturbation_type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#Cytotoxicity -->
+
+    <owl:Class rdf:about="&life_model_v1;Cytotoxicity">
+        <rdfs:label>Cytotoxicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;Inhibition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#Growth_Inhibition -->
+
+    <owl:Class rdf:about="&life_model_v1;Growth_Inhibition">
+        <rdfs:label>Growth Inhibition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;perturbation_type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#HMS -->
+
+    <owl:Class rdf:about="&life_model_v1;HMS">
+        <rdfs:label>HMS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#ID -->
+
+    <owl:Class rdf:about="&life_model_v1;ID">
+        <rdfs:label>ID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001029"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#Inhibition -->
+
+    <owl:Class rdf:about="&life_model_v1;Inhibition">
+        <rdfs:label>Inhibition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;perturbation_type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#KINOMEScan -->
+
+    <owl:Class rdf:about="&life_model_v1;KINOMEScan">
+        <rdfs:label>KINOMEscan</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;uses_bioassay"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;binding_assay"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;utilize"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;biochemical_model_system"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001058"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#Ki -->
+
+    <owl:Class rdf:about="&life_model_v1;Ki">
+        <rdfs:label>Ki</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;binding_constant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#KiNativ -->
+
+    <owl:Class rdf:about="&life_model_v1;KiNativ">
+        <rdfs:label>KiNativ</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;uses_bioassay"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;binding_assay"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;utilize"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;cell_based_model_system"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001058"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001001 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001001">
+        <rdfs:label>study component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001002 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001002">
+        <rdfs:label>bioassay</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_assay_format"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;assay_format"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_assay_method"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;assay_method"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_detection_technology"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;detection_technology"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_result"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;result"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_scanned_process"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;scanned_process"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_assay_format"/>
+                        <owl:allValuesFrom rdf:resource="&life_model_v1;assay_format"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_assay_method"/>
+                        <owl:allValuesFrom rdf:resource="&life_model_v1;assay_method"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_detection_technology"/>
+                        <owl:allValuesFrom rdf:resource="&life_model_v1;detection_technology"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_result"/>
+                        <owl:allValuesFrom rdf:resource="&life_model_v1;result"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_scanned_process"/>
+                        <owl:allValuesFrom rdf:resource="&life_model_v1;scanned_process"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001001"/>
+        <rdfs:comment>bioassay type?</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001003 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001003">
+        <rdfs:label>biological process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001001"/>
+        <rdfs:comment>these will come from GO</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001004 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001004">
+        <rdfs:label>gene expression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001005 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001005">
+        <rdfs:label>phosphorilation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001006 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001006">
+        <rdfs:label>associated disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001026"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001007 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001007">
+        <rdfs:label>model system</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_attribute"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;model_system_attribute"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_component"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;model_biological_system_component"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;LIFE_0001052"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;material_entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_participant"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;material_entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;used_for_measuring"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_assay_medium"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;assay_medium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>uses molecular entities target some other molecular entities
+
+uses some material entity like cell or cell line
+
+is used to measure some biological process
+
+has model system attribute</rdfs:comment>
+        <rdfs:comment>&#39;has participant&#39; some 
+    (&#39;molecular entity&#39;
+     and (targets some 
+        (&#39;molecular entity&#39;
+         and (&#39;has role&#39; some &#39;target role&#39;))))</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001008 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001008">
+        <rdfs:label>cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;material_entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001009 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001009">
+        <rdfs:label>cell line</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;material_entity"/>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;participant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_organ"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;organ"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_organism"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;organism"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_cell_line_name"/>
+                <owl:someValuesFrom rdf:resource="&xsd;Name"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_tissue"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;tissue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_id"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;ATCC_ID"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_mutation"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;mutation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_disease"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Necessary cell line information will have:
+-- Name
+-- ATCC id
+-- Disease
+-- Markers
+-- Organism
+-- Mutation
+-- Organ (origin)
+-- Tissue
+
+These can/should also be used to identify the same cell lines.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001010 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001010">
+        <rdfs:label>pathway</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;LIFE_0001052"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;LIFE_0001052"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001011 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001011">
+        <rdfs:label>molecular entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;material_entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_id"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;ID"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_name"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;name"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001012 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001012">
+        <rdfs:label>gene</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001011"/>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;participant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_organism"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;organism"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001013 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001013">
+        <rdfs:label>protein</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001011"/>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;participant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_id"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;UniProt_ID"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_mutation"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;mutation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_sequence"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_name"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;name"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_organism"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;organism"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_modification"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;modification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_labeling_site"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;labeling_site"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001014 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001014">
+        <rdfs:label>perturbagen</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;abstract_entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_type"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;perturbation_type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_name"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;perturbagen_name"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_synonym"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;synonyms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_id"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;perturbagen_ID"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001015 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001015">
+        <rdfs:label>ligand</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;participant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001016 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001016">
+        <rdfs:label>marker</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;abstract_entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001017 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001017">
+        <rdfs:label>target</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;LIFE_0001051"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001010"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;LIFE_0001051"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&life_model_v1;LIFE_0001002"/>
+                                    <rdf:Description rdf:about="&life_model_v1;LIFE_0001007"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;LIFE_0001053"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001003"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;LIFE_0001054"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&life_model_v1;LIFE_0001042"/>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&life_model_v1;LIFE_0001055"/>
+                                                <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001057"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&life_model_v1;LIFE_0001056"/>
+                                                <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001041"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;abstract_entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_synonym"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;synonyms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_id"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;taxonomy_ID"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_id"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;Target_ID"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_type"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;Target_Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_name"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;target_name"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>user defined entity</rdfs:comment>
+        <rdfs:comment>is a molecular entity??
+may the signal be perturbated by some perturbagen or the translation from a measured entity?
+isn&#39;t the &#39;translates into&#39; through a biological process? 
+isn&#39;t measured entity actually something that reports a biological process?</rdfs:comment>
+        <rdfs:comment>put all the attributes from the database schema</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001018 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001018">
+        <rdfs:label>inhibition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001019 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001019">
+        <rdfs:label>cytokine secretion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001020 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001020">
+        <rdfs:label>transcription</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001021 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001021">
+        <rdfs:label>apoptotic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001024"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001022 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001022">
+        <rdfs:label>mitosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001003"/>
+        <rdfs:comment>cell cycle phase in GO, should we bring them all?</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001023 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001023">
+        <rdfs:label>interphase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001003"/>
+        <rdfs:comment>cell cycle phase in GO, should we bring them all?</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001024 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001024">
+        <rdfs:label>programmed cell death</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001025 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001025">
+        <rdfs:label>study attribute</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001026 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001026">
+        <rdfs:label>model biological system attribute</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;model_system_attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001027 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001027">
+        <rdfs:label>cell line name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001026"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001028 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001028">
+        <rdfs:label>role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001029 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001029">
+        <rdfs:label>material entity attribute</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001030 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001030">
+        <rdfs:label>study name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;study_detail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001031 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001031">
+        <rdfs:label>cell growth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001032 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001032">
+        <rdfs:label>regulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001033 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001033">
+        <rdfs:label>proliferation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001034 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001034">
+        <rdfs:label>small molecule</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001011"/>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;participant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_attribute"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;smile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_molecular_structure"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;structure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001035 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001035">
+        <rdfs:label>siRNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001036 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001036">
+        <rdfs:label>shRNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001037 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001037">
+        <rdfs:label>growth factor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001038 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001038">
+        <rdfs:label>cytokine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001039 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001039">
+        <rdfs:label>peptide hormone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001040 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001040">
+        <rdfs:label>polysaccharide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001041 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001041">
+        <rdfs:label>endpoint</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;result"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001042 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001042">
+        <rdfs:label>measured entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;bioassay_component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001043 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001043">
+        <rdfs:label>molecular state</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001029"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001044 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001044">
+        <rdfs:label>active</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001043"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001045 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001045">
+        <rdfs:label>inactive</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001043"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001046 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001046">
+        <rdfs:label>cut off value</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001047"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001047 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001047">
+        <rdfs:label>measurement attribute</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;bioassay_attributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001048 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001048">
+        <rdfs:label>concentration</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001047"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001049 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001049">
+        <rdfs:label>unit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001047"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001057 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001057">
+        <rdfs:label>signal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001047"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#LIFE_0001058 -->
+
+    <owl:Class rdf:about="&life_model_v1;LIFE_0001058">
+        <rdfs:label>study</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_attribute"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001025"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_bioassay"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001002"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_model_system"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001007"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_attribute"/>
+                        <owl:allValuesFrom rdf:resource="&life_model_v1;LIFE_0001025"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_bioassay"/>
+                        <owl:allValuesFrom rdf:resource="&life_model_v1;LIFE_0001002"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_model_system"/>
+                        <owl:allValuesFrom rdf:resource="&life_model_v1;LIFE_0001007"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_perturbagen"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_target"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_id"/>
+                <owl:onClass rdf:resource="&life_model_v1;study_ID"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_name"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>experiment?</rdfs:comment>
+        <rdfs:comment>has - model biological system
+        - bioassay 
+        - other attributes
+
+bioassay and model biological system both have:
+       - biological processes
+       - molecular entities
+       - related pathways
+other attributes are:
+     - name
+     - measured entity
+      - endpoint
+      - results (what&#39;s the difference from the prev. 2?)       
+each component (i.e. bioassay and mbs) has
+        - attributes(biopax calls them features, bao calls them specifications)
+      
+      </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#MGH/Sanger_Institute_growth_inhibition -->
+
+    <owl:Class rdf:about="&life_model_v1;MGH/Sanger_Institute_growth_inhibition">
+        <rdfs:label>MGH/Sanger Institute growth inhibition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001058"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#MLSCN_Center_at_Columbia_University -->
+
+    <owl:Class rdf:about="&life_model_v1;MLSCN_Center_at_Columbia_University">
+        <rdfs:label>MLSCN Center at Columbia University</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#Mitchison_Lab_two-/_three-_color_apoptosis_imaging -->
+
+    <owl:Class rdf:about="&life_model_v1;Mitchison_Lab_two-/_three-_color_apoptosis_imaging">
+        <rdfs:label>Mitchison Lab Microscopy and Imaging</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001058"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#NCBI_taxonomy_ID -->
+
+    <owl:Class rdf:about="&life_model_v1;NCBI_taxonomy_ID">
+        <rdfs:label>NCBI taxonomy ID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;taxonomy_ID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#PMID -->
+
+    <owl:Class rdf:about="&life_model_v1;PMID">
+        <rdfs:label>PMID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;ID"/>
+        <rdfs:comment>PubMed Identifier</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#Phosphorilation -->
+
+    <owl:Class rdf:about="&life_model_v1;Phosphorilation">
+        <rdfs:label>Phosphorilation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;perturbation_type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#PubChem_AID -->
+
+    <owl:Class rdf:about="&life_model_v1;PubChem_AID">
+        <rdfs:label>PubChem AID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;bioassay_ID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#PubChem_CID -->
+
+    <owl:Class rdf:about="&life_model_v1;PubChem_CID">
+        <rdfs:label>PubChem CID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;perturbagen_ID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#PubChem_SID -->
+
+    <owl:Class rdf:about="&life_model_v1;PubChem_SID">
+        <rdfs:label>PubChem SID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;perturbagen_ID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#PubChem_TID -->
+
+    <owl:Class rdf:about="&life_model_v1;PubChem_TID">
+        <rdfs:label>PubChem TID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;endpoint_ID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#Regulation -->
+
+    <owl:Class rdf:about="&life_model_v1;Regulation">
+        <rdfs:label>Regulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;perturbation_type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#Target_ID -->
+
+    <owl:Class rdf:about="&life_model_v1;Target_ID">
+        <rdfs:label>target ID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;abstract_entity_attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#Target_Type -->
+
+    <owl:Class rdf:about="&life_model_v1;Target_Type">
+        <rdfs:label>target type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;abstract_entity_attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#Transcriptional_Responses -->
+
+    <owl:Class rdf:about="&life_model_v1;Transcriptional_Responses">
+        <rdfs:label>Transcriptional Responses</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001058"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#UniProt_ID -->
+
+    <owl:Class rdf:about="&life_model_v1;UniProt_ID">
+        <rdfs:label>UniProt ID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;protein_id"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#Value -->
+
+    <owl:Class rdf:about="&life_model_v1;Value">
+        <rdfs:label>Value</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_unit_of_measurement"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001049"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_cut_off_value"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001046"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#abstract_entity -->
+
+    <owl:Class rdf:about="&life_model_v1;abstract_entity">
+        <rdfs:label>abstract entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#abstract_entity_attribute -->
+
+    <owl:Class rdf:about="&life_model_v1;abstract_entity_attribute">
+        <rdfs:label>abstract entity attribute</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#animal_model_system -->
+
+    <owl:Class rdf:about="&life_model_v1;animal_model_system">
+        <rdfs:label>animal model system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;organism_based_model_system"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#antibody-coated_bead_based_method -->
+
+    <owl:Class rdf:about="&life_model_v1;antibody-coated_bead_based_method">
+        <rdfs:label>antibody-coated bead based method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;cytokine_quantification_method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#apoptosis_assay -->
+
+    <owl:Class rdf:about="&life_model_v1;apoptosis_assay">
+        <rdfs:label>apoptosis assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;cytotoxicity_assay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#assay_deposition_date -->
+
+    <owl:Class rdf:about="&life_model_v1;assay_deposition_date">
+        <rdfs:label>assay deposition date</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_detail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#assay_description -->
+
+    <owl:Class rdf:about="&life_model_v1;assay_description">
+        <rdfs:label>assay description</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_detail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#assay_detail -->
+
+    <owl:Class rdf:about="&life_model_v1;assay_detail">
+        <rdfs:label>assay detail</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;bioassay_attributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#assay_format -->
+
+    <owl:Class rdf:about="&life_model_v1;assay_format">
+        <rdfs:label>assay format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;bioassay_component"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;utilize"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#assay_kit -->
+
+    <owl:Class rdf:about="&life_model_v1;assay_kit">
+        <rdfs:label>assay kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_detail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#assay_medium -->
+
+    <owl:Class rdf:about="&life_model_v1;assay_medium">
+        <rdfs:label>study medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;model_system_attribute"/>
+        <rdfs:comment>different mediums can contain multiple model systems</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#assay_method -->
+
+    <owl:Class rdf:about="&life_model_v1;assay_method">
+        <rdfs:label>assay method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;bioassay_component"/>
+        <rdfs:comment>BAO methods needs cleaning up! 
+immunoassay under binding assesment method??
+isnt phosphorilation molecular interaction??</rdfs:comment>
+        <rdfs:comment>I need hms folks to go throught the list of methods in BAO and refine it for me.
+methods -- are in use / might be used/ won&#39;t be used</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#assay_protocol -->
+
+    <owl:Class rdf:about="&life_model_v1;assay_protocol">
+        <rdfs:label>assay protocol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_detail"/>
+        <rdfs:comment>should  I integrate this with the model system?</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#assay_provider -->
+
+    <owl:Class rdf:about="&life_model_v1;assay_provider">
+        <rdfs:label>assay provider</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_detail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#assay_source -->
+
+    <owl:Class rdf:about="&life_model_v1;assay_source">
+        <rdfs:label>assay source</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_detail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#assay_stage -->
+
+    <owl:Class rdf:about="&life_model_v1;assay_stage">
+        <rdfs:label>assay stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;bioassay_component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#assay_title -->
+
+    <owl:Class rdf:about="&life_model_v1;assay_title">
+        <rdfs:label>assay title</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_detail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#atp_quantitation -->
+
+    <owl:Class rdf:about="&life_model_v1;atp_quantitation">
+        <rdfs:label>atp quantitation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;viability_measurement_method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#binding_assay -->
+
+    <owl:Class rdf:about="&life_model_v1;binding_assay">
+        <rdfs:label>binding assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#binding_assessment_method -->
+
+    <owl:Class rdf:about="&life_model_v1;binding_assessment_method">
+        <rdfs:label>binding assessment method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;molecular_interaction_assesment_method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#binding_constant -->
+
+    <owl:Class rdf:about="&life_model_v1;binding_constant">
+        <rdfs:label>binding constant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;protein_substrate_and_ligand_constant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#bioassay_ID -->
+
+    <owl:Class rdf:about="&life_model_v1;bioassay_ID">
+        <rdfs:label>bioassay ID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;bioassay_attributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#bioassay_attributes -->
+
+    <owl:Class rdf:about="&life_model_v1;bioassay_attributes">
+        <rdfs:label>bioassay attribute</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#bioassay_component -->
+
+    <owl:Class rdf:about="&life_model_v1;bioassay_component">
+        <rdfs:label>bioassay component</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#biochemical_format -->
+
+    <owl:Class rdf:about="&life_model_v1;biochemical_format">
+        <rdfs:label>biochemical format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_format"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#biochemical_model_system -->
+
+    <owl:Class rdf:about="&life_model_v1;biochemical_model_system">
+        <rdfs:label>biochemical model system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;biological_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#biological_model -->
+
+    <owl:Class rdf:about="&life_model_v1;biological_model">
+        <rdfs:label>biological model system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#biological_process_attribute -->
+
+    <owl:Class rdf:about="&life_model_v1;biological_process_attribute">
+        <rdfs:label>biological process attribute</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#bioperturbagen -->
+
+    <owl:Class rdf:about="&life_model_v1;bioperturbagen">
+        <rdfs:label>bioperturbagen</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;participant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#cell-free_format -->
+
+    <owl:Class rdf:about="&life_model_v1;cell-free_format">
+        <rdfs:label>cell-free format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_format"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#cell_based_format -->
+
+    <owl:Class rdf:about="&life_model_v1;cell_based_format">
+        <rdfs:label>cell based format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_format"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#cell_based_model_system -->
+
+    <owl:Class rdf:about="&life_model_v1;cell_based_model_system">
+        <rdfs:label>cell based model system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;biological_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#cell_cycle_assay -->
+
+    <owl:Class rdf:about="&life_model_v1;cell_cycle_assay">
+        <rdfs:label>cell cycle assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#cell_growth_assay -->
+
+    <owl:Class rdf:about="&life_model_v1;cell_growth_assay">
+        <rdfs:label>cell growth assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#cell_line_based_system -->
+
+    <owl:Class rdf:about="&life_model_v1;cell_line_based_system">
+        <rdfs:label>cell line based model system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;biological_model"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;LIFE_0001052"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001009"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_participant"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001009"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;LIFE_0001052"/>
+                        <owl:allValuesFrom rdf:resource="&life_model_v1;LIFE_0001009"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_participant"/>
+                        <owl:allValuesFrom rdf:resource="&life_model_v1;LIFE_0001009"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#classification_rule -->
+
+    <owl:Class rdf:about="&life_model_v1;classification_rule">
+        <rdfs:label>classification rule</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;biological_process_attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#computational_profile -->
+
+    <owl:Class rdf:about="&life_model_v1;computational_profile">
+        <rdfs:label>computational profile</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;profile_endpoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#computer-based_model_system -->
+
+    <owl:Class rdf:about="&life_model_v1;computer-based_model_system">
+        <rdfs:label>computer-based model system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#concentration_endpoint -->
+
+    <owl:Class rdf:about="&life_model_v1;concentration_endpoint">
+        <rdfs:label>concentration endpoint</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001041"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#coupled_enzyme_activity_assay -->
+
+    <owl:Class rdf:about="&life_model_v1;coupled_enzyme_activity_assay">
+        <rdfs:label>coupled enzyme activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;enzyme_activity_assay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#cytokine_quantification_method -->
+
+    <owl:Class rdf:about="&life_model_v1;cytokine_quantification_method">
+        <rdfs:label>cytokine quantification method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;detection_technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#cytokine_secretion_assay -->
+
+    <owl:Class rdf:about="&life_model_v1;cytokine_secretion_assay">
+        <rdfs:label>cytokine secretion assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;signal_transduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#cytotoxicity_assay -->
+
+    <owl:Class rdf:about="&life_model_v1;cytotoxicity_assay">
+        <rdfs:label>cytotoxicity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;viability_assay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#detection_technology -->
+
+    <owl:Class rdf:about="&life_model_v1;detection_technology">
+        <rdfs:label>method to detect perturbation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#direct_enzyme_activity_assay -->
+
+    <owl:Class rdf:about="&life_model_v1;direct_enzyme_activity_assay">
+        <rdfs:label>direct enzyme activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;enzyme_activity_assay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#dosage_endpoint -->
+
+    <owl:Class rdf:about="&life_model_v1;dosage_endpoint">
+        <rdfs:label>dosage endpoint</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001041"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#efficacy -->
+
+    <owl:Class rdf:about="&life_model_v1;efficacy">
+        <rdfs:label>efficacy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_response"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#endpoint_ID -->
+
+    <owl:Class rdf:about="&life_model_v1;endpoint_ID">
+        <rdfs:label>endpoint ID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;bioassay_attributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#entrez_gene_accession_number -->
+
+    <owl:Class rdf:about="&life_model_v1;entrez_gene_accession_number">
+        <rdfs:label>entrez gene accession number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;gene_ID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#enzyme_activity_assay -->
+
+    <owl:Class rdf:about="&life_model_v1;enzyme_activity_assay">
+        <rdfs:label>enzyme activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#enzyme_kinetic_constant -->
+
+    <owl:Class rdf:about="&life_model_v1;enzyme_kinetic_constant">
+        <rdfs:label>enzyme kinetic constant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;protein_substrate_and_ligand_constant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#ex_vivo -->
+
+    <owl:Class rdf:about="&life_model_v1;ex_vivo">
+        <rdfs:label>ex vivo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_medium"/>
+        <rdfs:comment>slice cultures, organ models, </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#experiment_type -->
+
+    <owl:Class rdf:about="&life_model_v1;experiment_type">
+        <rdfs:label>study type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;study_detail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#fluorescence_method -->
+
+    <owl:Class rdf:about="&life_model_v1;fluorescence_method">
+        <rdfs:label>fluorescence method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;physical_detection_method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#gene_ID -->
+
+    <owl:Class rdf:about="&life_model_v1;gene_ID">
+        <rdfs:label>gene id</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;ID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#gene_expression_assay -->
+
+    <owl:Class rdf:about="&life_model_v1;gene_expression_assay">
+        <rdfs:label>gene expression assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#gene_expression_detection_method -->
+
+    <owl:Class rdf:about="&life_model_v1;gene_expression_detection_method">
+        <rdfs:label>gene expression detection method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;detection_technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#gene_expression_profile -->
+
+    <owl:Class rdf:about="&life_model_v1;gene_expression_profile">
+        <rdfs:label>gene expression profile</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;profile_endpoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#gene_name -->
+
+    <owl:Class rdf:about="&life_model_v1;gene_name">
+        <rdfs:label>gene name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#heterogeneous -->
+
+    <owl:Class rdf:about="&life_model_v1;heterogeneous">
+        <rdfs:label>heterogeneous</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;uniformity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#homogeneous -->
+
+    <owl:Class rdf:about="&life_model_v1;homogeneous">
+        <rdfs:label>homogeneous</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;uniformity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#imaging_method -->
+
+    <owl:Class rdf:about="&life_model_v1;imaging_method">
+        <rdfs:label>imaging method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;physical_detection_method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#in_silico -->
+
+    <owl:Class rdf:about="&life_model_v1;in_silico">
+        <rdfs:label>in silico</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_medium"/>
+        <rdfs:comment>I need an upper class for in vivo, in vitro etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#in_situ -->
+
+    <owl:Class rdf:about="&life_model_v1;in_situ">
+        <rdfs:label>in situ</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_medium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#in_vitro -->
+
+    <owl:Class rdf:about="&life_model_v1;in_vitro">
+        <rdfs:label>in vitro</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_medium"/>
+        <rdfs:comment>cell cell line biochemical</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#in_vivo -->
+
+    <owl:Class rdf:about="&life_model_v1;in_vivo">
+        <rdfs:label>in vivo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_medium"/>
+        <rdfs:comment>model organisms</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#inhibitor_role -->
+
+    <owl:Class rdf:about="&life_model_v1;inhibitor_role">
+        <rdfs:label>inhibitor role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001028"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#kinase -->
+
+    <owl:Class rdf:about="&life_model_v1;kinase">
+        <rdfs:label>kinase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;LIFE_0001053"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;LIFE_0001053"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#kinase_activity_assay -->
+
+    <owl:Class rdf:about="&life_model_v1;kinase_activity_assay">
+        <rdfs:label>kinase activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;direct_enzyme_activity_assay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#labeling_site -->
+
+    <owl:Class rdf:about="&life_model_v1;labeling_site">
+        <rdfs:label>labeling site</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;abstract_entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#large_molecule -->
+
+    <owl:Class rdf:about="&life_model_v1;large_molecule">
+        <rdfs:label>large molecule</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;abstract_entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_organism"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;organism"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_name"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;name"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_sequence"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_id"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;ID"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#marker -->
+
+    <owl:Class rdf:about="&life_model_v1;marker">
+        <rdfs:label>associated marker</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001026"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#material_entity -->
+
+    <owl:Class rdf:about="&life_model_v1;material_entity">
+        <rdfs:label>material entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001001"/>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;model_biological_system_component"/>
+        <rdfs:comment>get this from OBI or BFO</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#maximal_activation -->
+
+    <owl:Class rdf:about="&life_model_v1;maximal_activation">
+        <rdfs:label>maximal activation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;efficacy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#maximal_inhibition -->
+
+    <owl:Class rdf:about="&life_model_v1;maximal_inhibition">
+        <rdfs:label>maximal inhibition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;efficacy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#measure_group -->
+
+    <owl:Class rdf:about="&life_model_v1;measure_group">
+        <rdfs:label>measure group</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;bioassay_component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#meiotic_cell_cycle_assay -->
+
+    <owl:Class rdf:about="&life_model_v1;meiotic_cell_cycle_assay">
+        <rdfs:label>meiotic cell cycle assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;cell_cycle_assay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#mitotic_cell_cycle_assay -->
+
+    <owl:Class rdf:about="&life_model_v1;mitotic_cell_cycle_assay">
+        <rdfs:label>mitotic cell cycle assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;cell_cycle_assay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#model_biological_system_component -->
+
+    <owl:Class rdf:about="&life_model_v1;model_biological_system_component">
+        <rdfs:label>model system component</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#model_system_attribute -->
+
+    <owl:Class rdf:about="&life_model_v1;model_system_attribute">
+        <rdfs:label>model system attribute</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#modification -->
+
+    <owl:Class rdf:about="&life_model_v1;modification">
+        <rdfs:label>associated modification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001026"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#molecular_function -->
+
+    <owl:Class rdf:about="&life_model_v1;molecular_function">
+        <rdfs:label>molecular function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001029"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#molecular_interaction_assesment_method -->
+
+    <owl:Class rdf:about="&life_model_v1;molecular_interaction_assesment_method">
+        <rdfs:label>molecular interaction assesment method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;detection_technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#molecular_mass -->
+
+    <owl:Class rdf:about="&life_model_v1;molecular_mass">
+        <rdfs:label>molecular mass</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001029"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#mutation -->
+
+    <owl:Class rdf:about="&life_model_v1;mutation">
+        <rdfs:label>associated mutation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001026"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#name -->
+
+    <owl:Class rdf:about="&life_model_v1;name">
+        <rdfs:label>material entity name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001029"/>
+        <rdfs:comment>do I really need this?</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#organ -->
+
+    <owl:Class rdf:about="&life_model_v1;organ">
+        <rdfs:label>associated organ</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001026"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#organism -->
+
+    <owl:Class rdf:about="&life_model_v1;organism">
+        <rdfs:label>associated organism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001026"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#organism_based_format -->
+
+    <owl:Class rdf:about="&life_model_v1;organism_based_format">
+        <rdfs:label>organism based format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_format"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#organism_based_model_system -->
+
+    <owl:Class rdf:about="&life_model_v1;organism_based_model_system">
+        <rdfs:label>organism based model system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;biological_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#panel_assay_profile -->
+
+    <owl:Class rdf:about="&life_model_v1;panel_assay_profile">
+        <rdfs:label>panel assay profile</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;profile_endpoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#participant -->
+
+    <owl:Class rdf:about="&life_model_v1;participant">
+        <rdfs:label>participant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;abstract_entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;participant_name"/>
+                <owl:someValuesFrom rdf:resource="&xsd;Name"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#percent_G2-M_arrested -->
+
+    <owl:Class rdf:about="&life_model_v1;percent_G2-M_arrested">
+        <rdfs:label>percent G2-M arrested</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_activity"/>
+        <rdfs:comment>(&#39;percent G2-M arrested&#39; and (&#39;percent proliferation&#39; and (not &#39;percent mitosis&#39;) ) )</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#percent_activation -->
+
+    <owl:Class rdf:about="&life_model_v1;percent_activation">
+        <rdfs:label>percent activation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_response"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#percent_activity -->
+
+    <owl:Class rdf:about="&life_model_v1;percent_activity">
+        <rdfs:label>percent activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_response"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#percent_apoptosis -->
+
+    <owl:Class rdf:about="&life_model_v1;percent_apoptosis">
+        <rdfs:label>percent apoptosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_cytotoxicity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#percent_bound -->
+
+    <owl:Class rdf:about="&life_model_v1;percent_bound">
+        <rdfs:label>percent bound</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_response"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#percent_cytotoxicity -->
+
+    <owl:Class rdf:about="&life_model_v1;percent_cytotoxicity">
+        <rdfs:label>percent cytotoxicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_inhibition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#percent_dead -->
+
+    <owl:Class rdf:about="&life_model_v1;percent_dead">
+        <rdfs:label>percent dead</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_cytotoxicity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#percent_dying -->
+
+    <owl:Class rdf:about="&life_model_v1;percent_dying">
+        <rdfs:label>percent dying</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_cytotoxicity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#percent_growth_inhibition -->
+
+    <owl:Class rdf:about="&life_model_v1;percent_growth_inhibition">
+        <rdfs:label>percent growth inhibition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_inhibition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#percent_inhibition -->
+
+    <owl:Class rdf:about="&life_model_v1;percent_inhibition">
+        <rdfs:label>percent inhibition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_response"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#percent_interphase -->
+
+    <owl:Class rdf:about="&life_model_v1;percent_interphase">
+        <rdfs:label>percent interphase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#percent_mitosis -->
+
+    <owl:Class rdf:about="&life_model_v1;percent_mitosis">
+        <rdfs:label>percent mitosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#percent_non-arrested -->
+
+    <owl:Class rdf:about="&life_model_v1;percent_non-arrested">
+        <rdfs:label>percent non-arrested</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_activity"/>
+        <rdfs:comment>(&#39;percent non-arrested&#39; and ( &#39;percent mitosis&#39; and &#39;percent proliferation&#39;) )</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#percent_proliferation -->
+
+    <owl:Class rdf:about="&life_model_v1;percent_proliferation">
+        <rdfs:label>percent proliferation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#percent_recovery -->
+
+    <owl:Class rdf:about="&life_model_v1;percent_recovery">
+        <rdfs:label>percent recovery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_response"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#percent_response -->
+
+    <owl:Class rdf:about="&life_model_v1;percent_response">
+        <rdfs:label>percent response</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;response_endpoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#percent_viability -->
+
+    <owl:Class rdf:about="&life_model_v1;percent_viability">
+        <rdfs:label>percent viability</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&life_model_v1;percent_viability"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&life_model_v1;has_perturbation_type"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&life_model_v1;Cytotoxicity"/>
+                                            <rdf:Description rdf:about="&life_model_v1;Growth_Inhibition"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&life_model_v1;has_perturbation_type"/>
+                                <owl:allValuesFrom>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&life_model_v1;Cytotoxicity"/>
+                                            <rdf:Description rdf:about="&life_model_v1;Growth_Inhibition"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_percent_response_value"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;float"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;percent_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#perturbagen_ID -->
+
+    <owl:Class rdf:about="&life_model_v1;perturbagen_ID">
+        <rdfs:label>perturbagen ID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;abstract_entity_attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#perturbagen_name -->
+
+    <owl:Class rdf:about="&life_model_v1;perturbagen_name">
+        <rdfs:label>perturbagen name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;abstract_entity_attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#perturbagen_role -->
+
+    <owl:Class rdf:about="&life_model_v1;perturbagen_role">
+        <rdfs:label>perturbagen role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001028"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#perturbation -->
+
+    <owl:Class rdf:about="&life_model_v1;perturbation">
+        <rdfs:label>perturbation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;abstract_entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_participant"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;participant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_perturbation_type"/>
+                <owl:onClass rdf:resource="&life_model_v1;perturbation_type"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#perturbation_type -->
+
+    <owl:Class rdf:about="&life_model_v1;perturbation_type">
+        <rdfs:label>perturbation type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;abstract_entity_attribute"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&life_model_v1;has_rule"/>
+                <owl:someValuesFrom rdf:resource="&life_model_v1;classification_rule"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#perturbed_system -->
+
+    <owl:Class rdf:about="&life_model_v1;perturbed_system">
+        <rdfs:label>perturbed</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;system_state"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#phosphorilation_detection_method -->
+
+    <owl:Class rdf:about="&life_model_v1;phosphorilation_detection_method">
+        <rdfs:label>phosphorilation detection method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;detection_technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#physical_detection_method -->
+
+    <owl:Class rdf:about="&life_model_v1;physical_detection_method">
+        <rdfs:label>physical detection method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;detection_technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#posttranslation_modification_assay -->
+
+    <owl:Class rdf:about="&life_model_v1;posttranslation_modification_assay">
+        <rdfs:label>posttranslation modification assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;signal_transduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#profile_endpoint -->
+
+    <owl:Class rdf:about="&life_model_v1;profile_endpoint">
+        <rdfs:label>profile endpoint</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001041"/>
+        <rdfs:comment>&#39;has measure group&#39; min 2 &#39;measure group&#39;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#profiling_assay -->
+
+    <owl:Class rdf:about="&life_model_v1;profiling_assay">
+        <rdfs:label>profiling assay</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;has_endpoint"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;profile_endpoint"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&life_model_v1;utilize"/>
+                        <owl:someValuesFrom rdf:resource="&life_model_v1;LIFE_0001002"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#protein-protein_interaction_assay -->
+
+    <owl:Class rdf:about="&life_model_v1;protein-protein_interaction_assay">
+        <rdfs:label>protein-protein interaction assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;binding_assay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#protein_id -->
+
+    <owl:Class rdf:about="&life_model_v1;protein_id">
+        <rdfs:label>protein id</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;ID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#protein_name -->
+
+    <owl:Class rdf:about="&life_model_v1;protein_name">
+        <rdfs:label>protein name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#protein_substrate_and_ligand_constant -->
+
+    <owl:Class rdf:about="&life_model_v1;protein_substrate_and_ligand_constant">
+        <rdfs:label>protein substrate and ligand constant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001041"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#reporter_gene_assay -->
+
+    <owl:Class rdf:about="&life_model_v1;reporter_gene_assay">
+        <rdfs:label>reporter gene assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;signal_transduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#response_endpoint -->
+
+    <owl:Class rdf:about="&life_model_v1;response_endpoint">
+        <rdfs:label>response endpoint</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001041"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#result -->
+
+    <owl:Class rdf:about="&life_model_v1;result">
+        <rdfs:label>assay result</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;bioassay_component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#scanned_process -->
+
+    <owl:Class rdf:about="&life_model_v1;scanned_process">
+        <rdfs:label>screened process</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&life_model_v1;LIFE_0001003"/>
+                    <rdf:Description rdf:about="&life_model_v1;molecular_function"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;bioassay_component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#second_messenger_assay -->
+
+    <owl:Class rdf:about="&life_model_v1;second_messenger_assay">
+        <rdfs:label>second messenger assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;signal_transduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#sequence -->
+
+    <owl:Class rdf:about="&life_model_v1;sequence">
+        <rdfs:label>sequence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001029"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#signal_transduction -->
+
+    <owl:Class rdf:about="&life_model_v1;signal_transduction">
+        <rdfs:label>signal transduction assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#small-molecule_physicochemical_format -->
+
+    <owl:Class rdf:about="&life_model_v1;small-molecule_physicochemical_format">
+        <rdfs:label>small-molecule physicochemical format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_format"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#small_molecule_name -->
+
+    <owl:Class rdf:about="&life_model_v1;small_molecule_name">
+        <rdfs:label>small molecule name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#smile -->
+
+    <owl:Class rdf:about="&life_model_v1;smile">
+        <rdfs:label>SMILE</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001029"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#structure -->
+
+    <owl:Class rdf:about="&life_model_v1;structure">
+        <rdfs:label>structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001029"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#study_ID -->
+
+    <owl:Class rdf:about="&life_model_v1;study_ID">
+        <rdfs:label>study ID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;study_detail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#study_detail -->
+
+    <owl:Class rdf:about="&life_model_v1;study_detail">
+        <rdfs:label>study detail</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#synonymous_id -->
+
+    <owl:Class rdf:about="&life_model_v1;synonymous_id">
+        <rdfs:label>synonymous id</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;synonyms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#synonymous_name -->
+
+    <owl:Class rdf:about="&life_model_v1;synonymous_name">
+        <rdfs:label>synonymous name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;synonyms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#synonyms -->
+
+    <owl:Class rdf:about="&life_model_v1;synonyms">
+        <rdfs:label>synonym</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001029"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#system_state -->
+
+    <owl:Class rdf:about="&life_model_v1;system_state">
+        <rdfs:label>system state</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;model_system_attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#target_name -->
+
+    <owl:Class rdf:about="&life_model_v1;target_name">
+        <rdfs:label>target name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;abstract_entity_attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#target_role -->
+
+    <owl:Class rdf:about="&life_model_v1;target_role">
+        <rdfs:label>target role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001028"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#taxonomy_ID -->
+
+    <owl:Class rdf:about="&life_model_v1;taxonomy_ID">
+        <rdfs:label>taxonomy ID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;ID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#tissue -->
+
+    <owl:Class rdf:about="&life_model_v1;tissue">
+        <rdfs:label>associated tissue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001026"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#tissue_based_format -->
+
+    <owl:Class rdf:about="&life_model_v1;tissue_based_format">
+        <rdfs:label>tissue based format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;assay_format"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#tissue_based_model_system -->
+
+    <owl:Class rdf:about="&life_model_v1;tissue_based_model_system">
+        <rdfs:label>tissue based model system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;biological_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#uniformity -->
+
+    <owl:Class rdf:about="&life_model_v1;uniformity">
+        <rdfs:label>uniformity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;model_system_attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#unperturbed_state -->
+
+    <owl:Class rdf:about="&life_model_v1;unperturbed_state">
+        <rdfs:label>unperturbed</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;system_state"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#viability_assay -->
+
+    <owl:Class rdf:about="&life_model_v1;viability_assay">
+        <rdfs:label>viability assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;LIFE_0001002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#viability_measurement_method -->
+
+    <owl:Class rdf:about="&life_model_v1;viability_measurement_method">
+        <rdfs:label>viability measurement method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&life_model_v1;detection_technology"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#moderately_apoptotic -->
+
+    <owl:NamedIndividual rdf:about="&life_model_v1;moderately_apoptotic">
+        <rdf:type rdf:resource="&life_model_v1;Apoptosis"/>
+        <rdfs:label>moderately apoptotic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#moderately_down_regulated -->
+
+    <owl:NamedIndividual rdf:about="&life_model_v1;moderately_down_regulated">
+        <rdf:type rdf:resource="&life_model_v1;Regulation"/>
+        <rdfs:label>moderately down regulated</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#moderately_growth_inhibiting -->
+
+    <owl:NamedIndividual rdf:about="&life_model_v1;moderately_growth_inhibiting">
+        <rdf:type rdf:resource="&life_model_v1;Growth_Inhibition"/>
+        <rdfs:label>moderately growth inhibiting</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#moderately_inhibited -->
+
+    <owl:NamedIndividual rdf:about="&life_model_v1;moderately_inhibited">
+        <rdf:type rdf:resource="&life_model_v1;Inhibition"/>
+        <rdfs:label>moderately inhibited</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#moderately_up_regulated -->
+
+    <owl:NamedIndividual rdf:about="&life_model_v1;moderately_up_regulated">
+        <rdf:type rdf:resource="&life_model_v1;Regulation"/>
+        <rdfs:label>moderately up regulated</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#strongly_apoptotic -->
+
+    <owl:NamedIndividual rdf:about="&life_model_v1;strongly_apoptotic">
+        <rdf:type rdf:resource="&life_model_v1;Apoptosis"/>
+        <rdfs:label>strongly apoptotic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#strongly_down_regulated -->
+
+    <owl:NamedIndividual rdf:about="&life_model_v1;strongly_down_regulated">
+        <rdf:type rdf:resource="&life_model_v1;Regulation"/>
+        <rdfs:label>strongly down regulated</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#strongly_growth_inhibiting -->
+
+    <owl:NamedIndividual rdf:about="&life_model_v1;strongly_growth_inhibiting">
+        <rdf:type rdf:resource="&life_model_v1;Growth_Inhibition"/>
+        <rdfs:label>strongly growth inhibiting</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#strongly_inhibited -->
+
+    <owl:NamedIndividual rdf:about="&life_model_v1;strongly_inhibited">
+        <rdf:type rdf:resource="&life_model_v1;Inhibition"/>
+        <rdfs:label>strongly inhibited</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#strongly_up_regulated -->
+
+    <owl:NamedIndividual rdf:about="&life_model_v1;strongly_up_regulated">
+        <rdf:type rdf:resource="&life_model_v1;Regulation"/>
+        <rdfs:label>strongly up regulated</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#weakly_apoptotic -->
+
+    <owl:NamedIndividual rdf:about="&life_model_v1;weakly_apoptotic">
+        <rdf:type rdf:resource="&life_model_v1;Apoptosis"/>
+        <rdfs:label>weakly apoptotic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#weakly_down_regulated -->
+
+    <owl:NamedIndividual rdf:about="&life_model_v1;weakly_down_regulated">
+        <rdf:type rdf:resource="&life_model_v1;Regulation"/>
+        <rdfs:label>weakly down regulated</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#weakly_growth_inhibiting -->
+
+    <owl:NamedIndividual rdf:about="&life_model_v1;weakly_growth_inhibiting">
+        <rdf:type rdf:resource="&life_model_v1;Growth_Inhibition"/>
+        <rdfs:label>weakly growth inhibiting</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#weakly_inhibited -->
+
+    <owl:NamedIndividual rdf:about="&life_model_v1;weakly_inhibited">
+        <rdf:type rdf:resource="&life_model_v1;Inhibition"/>
+        <rdfs:label>weakly inhibited</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://bioassayontology.org/life_model_v1.owl#weakly_up_regulated -->
+
+    <owl:NamedIndividual rdf:about="&life_model_v1;weakly_up_regulated">
+        <rdf:type rdf:resource="&life_model_v1;Regulation"/>
+        <rdfs:label>weakly up regulated</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
