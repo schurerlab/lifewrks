@@ -1,0 +1,1648 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY UO "http://purl.org/obo/owl/UO#" >
+    <!ENTITY bfo "http://www.ifomis.org/bfo/1.1#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY OBO_REL "http://purl.org/obo/owl/OBO_REL#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY bao "http://www.bioassayontology.org/bao#" >
+    <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/modules#"
+     xml:base="http://www.bioassayontology.org/bao/modules"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:UO="http://purl.org/obo/owl/UO#"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:bao="http://www.bioassayontology.org/bao#">
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/modules"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;inSubset"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasAlternativeId"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasBroadSynonym"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000112"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasNarrowSynonym"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000111"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasSynonym"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasRelatedSynonym"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000114"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasDefinition"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasDbXref"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;id"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="&obo;IAO_0000136">
+        <rdfs:label rdf:datatype="&xsd;string">is about</rdfs:label>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of &quot;mentions&quot; relation. Weaken the is_about relationship to be primitive. 
+
+We will try to build it back up by elaborating the various subproperties that are more precisely defined.
+
+Some currently missing phenomena that should be considered &quot;about&quot; are predications - &quot;The only person who knows the answer is sitting beside me&quot; , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic.</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">This document is about information artifacts and their representations</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">is_about is a (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#has_part -->
+
+    <owl:ObjectProperty rdf:about="&OBO_REL;has_part"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000097 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000097">
+        <rdfs:label>has temperature unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000106 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000106">
+        <rdfs:label>has marker</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000117 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000117">
+        <rdfs:label>is substrate of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0002739"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000122 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000122">
+        <rdfs:label>is marker of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000106"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000135 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000135">
+        <rdfs:label>stains</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000183 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000183">
+        <rdfs:label>has concentration unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000196 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000196">
+        <rdfs:label>has mode of action</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000205 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000205">
+        <rdfs:label>has assay format</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000207 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000207">
+        <rdfs:label>has detection method</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000208 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000208">
+        <rdfs:label>has endpoint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000209 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000209">
+        <rdfs:label>has measure group</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000426"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000212 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000212">
+        <rdfs:label>has assay method</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000337 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000337">
+        <rdfs:label>has percent response</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000338 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000338">
+        <rdfs:label>has concentration</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000383 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000383">
+        <rdfs:label>has ID</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0002799"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000391 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000391">
+        <rdfs:label>is assay method of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000212"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000398 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000398">
+        <rdfs:label>is regulated by</rdfs:label>
+        <owl:propertyDisjointWith rdf:resource="&bao;BAO_0000589"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000426 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000426">
+        <rdfs:label>is measure group of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000555 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000555">
+        <rdfs:label>is assay format of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000205"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000559 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000559">
+        <rdfs:label>is endpoint of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000208"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000589 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000589">
+        <rdfs:label>is regulator of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000398"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000600 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0000600">
+        <rdfs:label>is detection method of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000207"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001105 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0001105">
+        <rdfs:label>based on normalization</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002000 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0002000">
+        <rdfs:label>has measured entity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002004 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0002004">
+        <rdfs:label>has cell line</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0002800"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002009 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0002009">
+        <rdfs:label>involves biological process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_00020164 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_00020164">
+        <rdfs:label>has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_00020169 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_00020169">
+        <rdfs:label>has binding site</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_00020172 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_00020172">
+        <rdfs:label>has function</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002586 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0002586">
+        <rdfs:label>is indicator of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002659 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0002659">
+        <rdfs:label>encodes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002660 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0002660">
+        <rdfs:label>is measured entity of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0002000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002662 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0002662">
+        <rdfs:label>has quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002665 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0002665">
+        <rdfs:label>uses as substrate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002668 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0002668">
+        <rdfs:label>has time unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002739 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0002739">
+        <rdfs:label>has substrate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002767 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0002767">
+        <rdfs:label xml:lang="en">is binding site of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_00020169"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002796 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0002796">
+        <rdfs:label xml:lang="en">tagged with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002797 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0002797">
+        <rdfs:label xml:lang="en">has detected entity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002799 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0002799">
+        <rdfs:label xml:lang="en">is ID of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002800 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0002800">
+        <rdfs:label xml:lang="en">is cell line of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#has_participant -->
+
+    <owl:ObjectProperty rdf:about="&ro;has_participant">
+        <rdfs:label xml:lang="en">has_participant</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.</rdfs:comment>
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasAlternativeId>OBO_REL:0000019</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#participates_in -->
+
+    <owl:ObjectProperty rdf:about="&ro;participates_in">
+        <rdfs:label xml:lang="en">participates_in</rdfs:label>
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasAlternativeId>OBO_REL:0000020</oboInOwl:hasAlternativeId>
+        <owl:inverseOf rdf:resource="&ro;has_participant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000109 -->
+
+    <owl:DatatypeProperty rdf:about="&bao;BAO_0000109">
+        <rdfs:label>has temperature value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000195 -->
+
+    <owl:DatatypeProperty rdf:about="&bao;BAO_0000195">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>has percent response value</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000203 -->
+
+    <owl:DatatypeProperty rdf:about="&bao;BAO_0000203">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>has id value</rdfs:label>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&xsd;integer"/>
+                    <rdf:Description rdf:about="&xsd;string"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000300 -->
+
+    <owl:DatatypeProperty rdf:about="&bao;BAO_0000300">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">has DNA sequence</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000552 -->
+
+    <owl:DatatypeProperty rdf:about="&bao;BAO_0000552">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>has display info</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002666 -->
+
+    <owl:DatatypeProperty rdf:about="&bao;BAO_0002666">
+        <rdfs:label>has concentration value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002669 -->
+
+    <owl:DatatypeProperty rdf:about="&bao;BAO_0002669">
+        <rdfs:label>has time value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002788 -->
+
+    <owl:DatatypeProperty rdf:about="&bao;BAO_0002788">
+        <rdfs:label xml:lang="en">has passage number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000175 -->
+
+    <owl:Class rdf:about="&bao;BAO_0000175">
+        <rdfs:label>protein</rdfs:label>
+        <obo:IAO_0000115>A protein or polypeptide is a long polymer of amino acids joined together by peptide bonds. The sequence of the amino acids is defined by the genetic code.
+Here, a protein is a perturbagen whereby its ability to modulate a physiological process or a disease pathology is assessed.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000222 -->
+
+    <owl:Class rdf:about="&bao;BAO_0000222">
+        <rdfs:label>generic hydrolase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&bao;BAO_0000287"/>
+        <obo:IAO_0000115>Includes all hydrolases except phosphatases and proteases.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000279 -->
+
+    <owl:Class rdf:about="&bao;BAO_0000279">
+        <rdfs:label>enzyme</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&bao;BAO_0000175"/>
+        <obo:IAO_0000115>Enzymes are biological catalysts involved in important pathways that allow chemical reactions to occur at higher rates (velocities) than would be possible without the enzyme. Enzymes are generally globular proteins that have one or more substrate binding sites.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000282 -->
+
+    <owl:Class rdf:about="&bao;BAO_0000282">
+        <rdfs:label>transcription factor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&bao;BAO_0000175"/>
+        <obo:IAO_0000115>It is a protein that binds to a specific sequence of DNA (upstream of the genes that it regulates) and regulates gene expression.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000287 -->
+
+    <owl:Class rdf:about="&bao;BAO_0000287">
+        <rdfs:label>hydrolase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&bao;BAO_0000279"/>
+        <obo:IAO_0000115>Formation of two products from a substrate by hydrolysis.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000291 -->
+
+    <owl:Class rdf:about="&bao;BAO_0000291">
+        <rdfs:label>oxidoreductase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&bao;BAO_0000279"/>
+        <obo:IAO_0000115>To catalyze oxidation/reduction reactions; transfer of H and O atoms or electrons from one substance to another.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000292 -->
+
+    <owl:Class rdf:about="&bao;BAO_0000292">
+        <rdfs:label>transferase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&bao;BAO_0000279"/>
+        <obo:IAO_0000115>Transfer of a functional group from one substance to another. The group may be methyl-, acyl-, amino- or phosphate group.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000294 -->
+
+    <owl:Class rdf:about="&bao;BAO_0000294">
+        <rdfs:label>kinase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&bao;BAO_0000292"/>
+        <obo:IAO_0000115>A protein kinase is an enzyme that modifies other proteins by chemically adding phosphate groups to them. The substrate protein&#39;s activity, localization and overall function is modulated by the kinase reaction.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_00100009 -->
+
+    <owl:Class rdf:about="&bao;BAO_00100009">
+        <rdfs:label>Caspase-3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&bao;BAO_0000222"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000002 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000002">
+        <rdfs:label xml:lang="en">example to be eventually removed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000103 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000103">
+        <rdfs:label xml:lang="en">failed exploratory term</rdfs:label>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The term was used used in an attempt to structure part of the ontology but in retrospect failed to do a good job</obo:IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000120 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000120">
+        <rdfs:label xml:lang="en">metadata complete</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete.</obo:IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000121 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000121">
+        <rdfs:label xml:lang="en">placeholder</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">This isn&#39;t a class that OBI will keep - it&#39;s a placeholder for edits that are underway. The class name should start with an underscore</obo:IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000122 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000122">
+        <rdfs:label xml:lang="en">ready for release</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Class has undergone final review, is ready for use, and will be included in the next OBI release. Any class lacking &quot;ready_for_release&quot; should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed &quot;ready_for_release&quot; will also derived from a chain of ancestor classes that are also &quot;ready_for_release.&quot;</obo:IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000123 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000123">
+        <rdfs:label xml:lang="en">metadata incomplete</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors.</obo:IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000124 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000124">
+        <rdfs:label xml:lang="en">uncurated</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Nothing done yet beyond assigning a unique class ID and proposing a preferred term.</obo:IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000125 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000125">
+        <rdfs:label xml:lang="en">pending final vetting</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the definition editor.</obo:IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000224 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000224">
+        <rdfs:label xml:lang="en">core</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Core is an instance of a grouping of terms from an ontology or ontologies. It is used by OBI to identify main classes.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000226 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000226">
+        <rdfs:label xml:lang="en">placeholder removed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000227 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000227">
+        <rdfs:label xml:lang="en">terms merged</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">An editor note should explain what were the merged terms and the reason for the merge.</obo:IAO_0000116>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000228 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000228">
+        <rdfs:label xml:lang="en">term imported</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use.</obo:IAO_0000116>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000229 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000229">
+        <rdfs:label xml:lang="en">term split</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created.</obo:IAO_0000116>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000230 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000230">
+        <rdfs:label xml:lang="en">other</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">This is to be used if none of the existing instances cover the reason for obsolescence. An editor note should indicate this new reason.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">We expect to be able to mine these new reasons and add instances as required.</obo:IAO_0000116>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000410 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000410">
+        <rdfs:label rdf:datatype="&xsd;string">universal</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">Hard to give a definition for. Intuitively a &quot;natural kind&quot; rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents.</obo:IAO_0000116>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000420 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000420">
+        <rdfs:label rdf:datatype="&xsd;string">defined class</rdfs:label>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">&quot;definitions&quot;, in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal.</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Alan Ruttenberg</obo:IAO_0000117>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000421 -->
+
+    <owl:NamedIndividual rdf:about="&obo;IAO_0000421">
+        <rdfs:label rdf:datatype="&xsd;string">named class expression</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A named class expression is a logical expression that is given a name. The name can be used in place of the expression.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions</obo:IAO_0000116>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000144 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000144">
+        <rdfs:label>bfp</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000145 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000145">
+        <rdfs:label>cfp</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000146 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000146">
+        <rdfs:label>cycle 3 gfp</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000148 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000148">
+        <rdfs:label>emgfp</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000149 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000149">
+        <rdfs:label>yfp</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000155 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000155">
+        <rdfs:label>egfp</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000258 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000258">
+        <rdfs:label>stimulation individual</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000301 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000301">
+        <rdfs:label xml:lang="en">micromolar</rdfs:label>
+        <rdfs:comment>micromolar(micromolar); the concept is imported from the UO module</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000339 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000339">
+        <rdfs:label>activation individual</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000340 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000340">
+        <rdfs:label>growth inhibition individual</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000341 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000341">
+        <rdfs:label>50 percent inhibition individual</rdfs:label>
+        <bao:BAO_0000195 rdf:datatype="&xsd;float">50.0</bao:BAO_0000195>
+        <bao:BAO_0000196 rdf:resource="&bao;BAO_0000374"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000342 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000342">
+        <rdfs:label>80 percent inhibition individual</rdfs:label>
+        <bao:BAO_0000195 rdf:datatype="&xsd;float">80.0</bao:BAO_0000195>
+        <bao:BAO_0000196 rdf:resource="&bao;BAO_0000374"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000343 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000343">
+        <rdfs:label>50 percent activation individual</rdfs:label>
+        <bao:BAO_0000195 rdf:datatype="&xsd;float">50.0</bao:BAO_0000195>
+        <bao:BAO_0000196 rdf:resource="&bao;BAO_0000339"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000344 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000344">
+        <rdfs:label>cytotoxicity individual</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000345 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000345">
+        <rdfs:label>50 percent cell viability individual</rdfs:label>
+        <bao:BAO_0000195 rdf:datatype="&xsd;float">50.0</bao:BAO_0000195>
+        <bao:BAO_0000196 rdf:resource="&bao;BAO_0000344"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000374 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000374">
+        <rdfs:label>inhibition individual</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000386 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000386">
+        <rdfs:label>magnesium</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000387 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000387">
+        <rdfs:label>copper</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000388 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000388">
+        <rdfs:label>zinc</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000389 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000389">
+        <rdfs:label>iron</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000393 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000393">
+        <rdfs:label>gfp tag</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000429 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000429">
+        <rdfs:label>tetramethylrhodamine ethyl ester (tmre)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000446 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000446">
+        <rdfs:label>jc-1</rdfs:label>
+        <owl:sameAs rdf:resource="&bao;BAO_0000447"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000447 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0000447">
+        <rdfs:label>mitotracker red</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001102 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0001102">
+        <rdfs:label>50 percent cytotoxicity individual</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001107 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0001107">
+        <rdfs:label>50 percent growth inhibition individual</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001109 -->
+
+    <owl:NamedIndividual rdf:about="&bao;BAO_0001109">
+        <rdfs:label>100 percent growth inhibition individual</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&bao;BAO_0000340"/>
+            <rdf:Description rdf:about="&bao;BAO_0000374"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
